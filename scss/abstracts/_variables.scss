@@ -1,0 +1,42 @@
+// COLORS
+$c1: #E1DDD6;
+$c2: #E0DCD5;
+
+$c4: #EBECEE;
+$c5: #E8EAE9;
+$c6: #DEE0E2;
+$c7: #D6D7D9;
+
+$c8: #E2E2E2;
+$c9: #FDFDFB;
+
+$c10: #FEFCFB;
+$c11: #E8E8E8; // 5-9
+
+$white: #fcfcfb;
+
+$black: #1C1B21;
+$black1: #16161B;
+$black2: #002b31;
+$black3: #393B3C;
+
+$red: #FF231B;
+$red1: #d92b04;
+$red2: #d03f0a;
+$red3: #f44242;
+$red4: 	#db1414;
+$like-dark: #AF4438;
+$like-light: #EC6253;
+$like-gradient: linear-gradient(to bottom right, #EC6253, #AF4438);
+
+$article-gradient: radial-gradient( circle farthest-corner at 0% 0.5%,  rgba(241,241,242,1) 0.1%, rgba(224,226,228,1) 100.2% ); // na sivo
+$article-gradient2: linear-gradient( 111.5deg,  rgba(242,246,254,1) 0.3%, rgba(227,233,252,1) 99.1% ); // vise na plavo
+$article-gradient3: radial-gradient( circle 571px at 51.4% 22.8%,  rgba(250,250,250,1) 4.1%, rgba(230,230,230,1) 100.2% ); // moj kao
+
+// fonts
+$def: 'Coves Light';
+$lux: 'Luxia-Display';
+$logo: 'Quantum';
+
+// shadow
+$box-shadow-btn: 0 1rem 2rem rgba($black2, .2); 

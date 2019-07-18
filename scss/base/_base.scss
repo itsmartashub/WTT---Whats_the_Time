@@ -1,0 +1,43 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $def, sans-serif;
+    font-size: 1.5rem;
+    color: $black2;
+    background: $white;
+}
+
+::selection {
+    background: $black2;
+    color: $white;
+}
+
+.grid-container {
+    // height: 100vh;
+    // width: 100%;
+    background: blue;
+
+    display: grid;
+    grid-template-rows: min-content 80vh min-content min-content 20vw min-content;
+    // grid-template-columns: [side1-start] 6vw [side1-end center-start] repeat(4, [col-center] minmax(min-content, 1fr) [col-end]) [center-end side2-start] 6vw [side2-end]; // 14rem je jer je taj centralni deo izmedju ova dva sidebara od 5vw 1200 ili 1140/4 = 285px po koloni iliti oko 28rem
+    grid-template-columns: 6vw repeat(4, minmax(min-content, 1fr)) 6vw; // 14rem je jer je taj centralni deo izmedju ova dva sidebara od 5vw 1200 ili 1140/4 = 285px po koloni iliti oko 28rem
+    grid-template-areas: 
+        "menu menu menu menu menu menu"
+        "side1 header header header header side2"
+        "side1 refund refund refund refund side2"
+        "side1 main main main main side2"
+        "side1 subs subs subs subs side2"
+        "side1 footer footer footer footer side2";
+
+}

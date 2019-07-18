@@ -1,0 +1,18 @@
+.sidebar {
+    // grid-row: 2 / -1;
+    &__1 {
+        background: orange ;
+        grid-area: side1;
+        
+        // grid-column: side1-start / side1-end;
+        
+    }
+
+    &__2 {
+        background: orangered ;
+        grid-area: side2;
+
+        // grid-column: side2-start / side2-end;
+
+    }
+}

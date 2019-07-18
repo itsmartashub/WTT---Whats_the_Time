@@ -1,0 +1,96 @@
+{
+    "items": [
+        {
+            "title": "Aoyama",
+            "brand": "pontier",
+            "price": 99.99,
+            "img": "../img/products/001.png",
+            "gender": "unisex",
+            "type": "analog",
+            "color": "black"
+        },
+        {
+            "title": "Arbat Silver",
+            "brand": "pontier",
+            "price": 100.99,
+            "img": "../img/products/002.png",
+            "gender": "unisex",
+            "type": "analog",
+            "color": "silver"
+        },
+        {
+            "title": "Bywater Silack",
+            "brand": "pontier",
+            "price": 120.99,
+            "img": "../img/products/003.png",
+            "gender": "unisex",
+            "type": "analog",
+            "color": "silver"
+        },
+        {
+            "title": "Capucins",
+            "brand": "pontier",
+            "price": 99,
+            "img": "../img/products/004.png",
+            "gender": "unisex",
+            "type": "analog",
+            "color": "brown"
+        },
+        {
+            "title": "Coyoacan Own",
+            "brand": "pontier",
+            "price": 180.99,
+            "img": "../img/products/005.png",
+            "gender": "unisex",
+            "type": "analog",
+            "color": "brown"
+        },
+        {
+            "title": "Hauzkhas Ack",
+            "brand": "pontier",
+            "price": 160.99,
+            "img": "../img/products/006.png",
+            "gender": "unisex",
+            "type": "analog",
+            "color": "black"
+        },
+        {
+            "title": "Hivernage Ack",
+            "brand": "pontier",
+            "price": 210.99,
+            "img": "../img/products/007.png",
+            "gender": "unisex",
+            "type": "analog",
+            "color": "black"
+        },
+        {
+            "title": "Isola Own",
+            "brand": "pontier",
+            "price": 205.99,
+            "img": "../img/products/008.png",
+            "gender": "unisex",
+            "type": "analog",
+            "color": "brown"
+
+        },
+        {
+            "title": "Kalamaja Own",
+            "brand": "pontier",
+            "price": 223.99,
+            "img": "../img/products/009.png",
+            "gender": "unisex",
+            "type": "analog",
+            "color": "brown"
+
+        },
+        {
+            "title": "Kallio Silver",
+            "brand": "pontier",
+            "price": 123.99,
+            "img": "../img/products/010.png",
+            "gender": "unisex",
+            "type": "analog",
+            "color": "silver"
+        }
+    ]
+}

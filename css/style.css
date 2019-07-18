@@ -1,0 +1,364 @@
+.icon-airplane,
+.icon-airplane\:regular, .icon-checked,
+.icon-checked\:regular, .icon-cross-out,
+.icon-cross-out\:regular, .icon-exchange,
+.icon-exchange\:regular, .icon-facebook,
+.icon-facebook\:regular, .icon-form-email,
+.icon-form-email\:regular, .icon-form-eye,
+.icon-form-eye\:regular, .icon-form-fullname,
+.icon-form-fullname\:regular, .icon-form-password,
+.icon-form-password\:regular, .icon-free-delivery,
+.icon-free-delivery\:regular, .icon-gift,
+.icon-gift\:regular, .icon-heart,
+.icon-heart\:regular, .icon-instagram,
+.icon-instagram\:regular, .icon-login,
+.icon-login\:regular, .icon-login_signup,
+.icon-login_signup\:regular, .icon-magnifying-glass,
+.icon-magnifying-glass\:regular, .icon-pinterest,
+.icon-pinterest\:regular, .icon-refund,
+.icon-refund\:regular, .icon-return-box,
+.icon-return-box\:regular, .icon-shield,
+.icon-shield\:regular, .icon-shopping-bag,
+.icon-shopping-bag\:regular, .icon-signup,
+.icon-signup\:regular, .icon-user,
+.icon-user\:regular {
+  background-repeat: no-repeat; }
+
+.icon-airplane,
+.icon-airplane\:regular {
+  background-image: url("../img/icons.svg");
+  background-position: 0 0; }
+
+.icon-airplane-dims {
+  width: 300px;
+  height: 300px; }
+
+.icon-checked,
+.icon-checked\:regular {
+  background-image: url("../img/icons.svg");
+  background-position: 0 -300px; }
+
+.icon-checked-dims {
+  width: 50px;
+  height: 50px; }
+
+.icon-cross-out,
+.icon-cross-out\:regular {
+  background-image: url("../img/icons.svg");
+  background-position: 0 -350px; }
+
+.icon-cross-out-dims {
+  width: 50px;
+  height: 50px; }
+
+.icon-exchange,
+.icon-exchange\:regular {
+  background-image: url("../img/icons.svg");
+  background-position: 0 -400px; }
+
+.icon-exchange-dims {
+  width: 300px;
+  height: 300px; }
+
+.icon-facebook,
+.icon-facebook\:regular {
+  background-image: url("../img/icons.svg");
+  background-position: 0 -700px; }
+
+.icon-facebook-dims {
+  width: 50px;
+  height: 50px; }
+
+.icon-form-email,
+.icon-form-email\:regular {
+  background-image: url("../img/icons.svg");
+  background-position: 0 -750px; }
+
+.icon-form-email-dims {
+  width: 300px;
+  height: 300px; }
+
+.icon-form-eye,
+.icon-form-eye\:regular {
+  background-image: url("../img/icons.svg");
+  background-position: 0 -1050px; }
+
+.icon-form-eye-dims {
+  width: 50px;
+  height: 50px; }
+
+.icon-form-fullname,
+.icon-form-fullname\:regular {
+  background-image: url("../img/icons.svg");
+  background-position: 0 -1100px; }
+
+.icon-form-fullname-dims {
+  width: 300px;
+  height: 300px; }
+
+.icon-form-password,
+.icon-form-password\:regular {
+  background-image: url("../img/icons.svg");
+  background-position: 0 -1400px; }
+
+.icon-form-password-dims {
+  width: 300px;
+  height: 300px; }
+
+.icon-free-delivery,
+.icon-free-delivery\:regular {
+  background-image: url("../img/icons.svg");
+  background-position: 0 -1700px; }
+
+.icon-free-delivery-dims {
+  width: 50px;
+  height: 50px; }
+
+.icon-gift,
+.icon-gift\:regular {
+  background-image: url("../img/icons.svg");
+  background-position: 0 -1750px; }
+
+.icon-gift-dims {
+  width: 50px;
+  height: 50px; }
+
+.icon-heart,
+.icon-heart\:regular {
+  background-image: url("../img/icons.svg");
+  background-position: 0 -1800px; }
+
+.icon-heart-dims {
+  width: 50px;
+  height: 50px; }
+
+.icon-instagram,
+.icon-instagram\:regular {
+  background-image: url("../img/icons.svg");
+  background-position: 0 -1850px; }
+
+.icon-instagram-dims {
+  width: 50px;
+  height: 50px; }
+
+.icon-login,
+.icon-login\:regular {
+  background-image: url("../img/icons.svg");
+  background-position: 0 -1900px; }
+
+.icon-login-dims {
+  width: 50px;
+  height: 50px; }
+
+.icon-login_signup,
+.icon-login_signup\:regular {
+  background-image: url("../img/icons.svg");
+  background-position: 0 -1950px; }
+
+.icon-login_signup-dims {
+  width: 300px;
+  height: 300px; }
+
+.icon-magnifying-glass,
+.icon-magnifying-glass\:regular {
+  background-image: url("../img/icons.svg");
+  background-position: 0 -2250px; }
+
+.icon-magnifying-glass-dims {
+  width: 50px;
+  height: 50px; }
+
+.icon-pinterest,
+.icon-pinterest\:regular {
+  background-image: url("../img/icons.svg");
+  background-position: 0 -2300px; }
+
+.icon-pinterest-dims {
+  width: 50px;
+  height: 50px; }
+
+.icon-refund,
+.icon-refund\:regular {
+  background-image: url("../img/icons.svg");
+  background-position: 0 -2350px; }
+
+.icon-refund-dims {
+  width: 300px;
+  height: 300px; }
+
+.icon-return-box,
+.icon-return-box\:regular {
+  background-image: url("../img/icons.svg");
+  background-position: 0 -2650px; }
+
+.icon-return-box-dims {
+  width: 50px;
+  height: 50px; }
+
+.icon-shield,
+.icon-shield\:regular {
+  background-image: url("../img/icons.svg");
+  background-position: 0 -2700px; }
+
+.icon-shield-dims {
+  width: 50px;
+  height: 50px; }
+
+.icon-shopping-bag,
+.icon-shopping-bag\:regular {
+  background-image: url("../img/icons.svg");
+  background-position: 0 -2750px; }
+
+.icon-shopping-bag-dims {
+  width: 50px;
+  height: 50px; }
+
+.icon-signup,
+.icon-signup\:regular {
+  background-image: url("../img/icons.svg");
+  background-position: 0 -2800px; }
+
+.icon-signup-dims {
+  width: 300px;
+  height: 300px; }
+
+.icon-user,
+.icon-user\:regular {
+  background-image: url("../img/icons.svg");
+  background-position: 0 -3100px; }
+
+.icon-user-dims {
+  width: 50px;
+  height: 50px; }
+
+@font-face {
+  font-family: 'Coves Light';
+  src: url("../fonts/Coves Light.otf") format("opentype"); }
+
+@font-face {
+  font-family: 'Luxia-Display';
+  src: url("../fonts/Luxia-Display.otf") format("opentype"); }
+
+@font-face {
+  font-family: 'Quantum';
+  src: url("../fonts/Quantum.otf") format("opentype"); }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Coves Light", sans-serif;
+  font-size: 1.5rem;
+  color: #002b31;
+  background: #fcfcfb; }
+
+::selection {
+  background: #002b31;
+  color: #fcfcfb; }
+
+.grid-container {
+  background: blue;
+  display: grid;
+  grid-template-rows: min-content 80vh min-content min-content 20vw min-content;
+  grid-template-columns: 6vw repeat(4, minmax(min-content, 1fr)) 6vw;
+  grid-template-areas: "menu menu menu menu menu menu" "side1 header header header header side2" "side1 refund refund refund refund side2" "side1 main main main main side2" "side1 subs subs subs subs side2" "side1 footer footer footer footer side2"; }
+
+.mb-1 {
+  margin-bottom: 1rem; }
+
+.mb-2 {
+  margin-bottom: 2rem; }
+
+.mb-3 {
+  margin-bottom: 3rem; }
+
+.txt-center {
+  text-align: center; }
+
+.show {
+  display: block; }
+
+.hide {
+  display: hide; }
+
+.btn, .btn:link, .btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  /* ako zelis da stavis padding, ili width, height elementu */
+  border-radius: 2rem;
+  border: none;
+  cursor: pointer;
+  transition: all .2s; }
+
+.btn:hover {
+  transform: translateY(-3px);
+  /* pomeramo na hover dugme na gore za 3px */
+  box-shadow: 0 1rem 2rem rgba(0, 43, 49, 0.2);
+  /* x y blur color */ }
+  .btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0; }
+
+.btn:active, .btn:focus {
+  outline: none;
+  transform: translateY(-1px);
+  /* kada se klikne  */
+  box-shadow: 0 0.5rem 1rem rgba(0, 43, 49, 0.2);
+  /* x y blur color */ }
+
+.btn::after {
+  /* ponasa se kao recimo children btn-a  */
+  content: "";
+  display: inline-block;
+  height: 100%;
+  /* 100% od btn-a */
+  width: 100%;
+  /* 100% od btn-a */
+  border-radius: 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all .4s; }
+
+.menu {
+  background: palegreen;
+  grid-area: menu; }
+
+.header {
+  background: teal;
+  grid-area: header; }
+
+.refund {
+  background: lightblue;
+  grid-area: refund; }
+
+.main {
+  background: palevioletred;
+  grid-area: main; }
+
+.subscribe {
+  background: lightslategray;
+  grid-area: subs; }
+
+.footer {
+  background: black;
+  grid-area: footer; }
+
+.sidebar__1 {
+  background: orange;
+  grid-area: side1; }
+
+.sidebar__2 {
+  background: orangered;
+  grid-area: side2; }
