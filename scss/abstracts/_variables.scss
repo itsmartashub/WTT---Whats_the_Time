@@ -2,23 +2,26 @@
 $c1: #E1DDD6;
 $c2: #E0DCD5;
 
-$c4: #EBECEE;
-$c5: #E8EAE9;
-$c6: #DEE0E2;
-$c7: #D6D7D9;
+$c3: #EBECEE;
+$c4: #E8EAE9;
+$c5: #DEE0E2;
+$c6: #D6D7D9;
 
-$c8: #E2E2E2;
-$c9: #FDFDFB;
+$c7: #E2E2E2;
+$c8: #FDFDFB;
 
-$c10: #FEFCFB;
-$c11: #E8E8E8; // 5-9
+$c9: #FEFCFB;
+$c10: #E8E8E8; // 5-9
 
 $white: #fcfcfb;
+
+$bg: #F1EFE9;
 
 $black: #1C1B21;
 $black1: #16161B;
 $black2: #002b31;
 $black3: #393B3C;
+$black4: #CECECE;
 
 $red: #FF231B;
 $red1: #d92b04;
@@ -33,10 +36,29 @@ $article-gradient: radial-gradient( circle farthest-corner at 0% 0.5%,  rgba(241
 $article-gradient2: linear-gradient( 111.5deg,  rgba(242,246,254,1) 0.3%, rgba(227,233,252,1) 99.1% ); // vise na plavo
 $article-gradient3: radial-gradient( circle 571px at 51.4% 22.8%,  rgba(250,250,250,1) 4.1%, rgba(230,230,230,1) 100.2% ); // moj kao
 
+$gold-gradient: linear-gradient(to bottom right, #98743E, #E3C394);
+$gold: #967140;
+$gold2: #E3C394;
+
+// $logo-gradient: linear-gradient(to bottom right, $black1, $black4);
 // fonts
 $def: 'Coves Light';
+$logo: 'Luxia-Display'; // 'Break Extralight', 'Break Light', 'Break Regular', 'Yessica Regular', 'Quantum'
+$cov: 'Coves Light';
 $lux: 'Luxia-Display';
-$logo: 'Quantum';
+$medium-r: 'Medium Regular';
+$medium-m: 'Medium Medium';
+$yess: 'Yessica Regular';
+$qua: 'Quantum';
+
+$sans-t: 'Tenor Sans', sans-serif; // KUL!
+$sans-o:'Open Sans', sans-serif; // onako
+$poppins: 'Poppins', sans-serif; // onako 2 slicn oko open sans
+$raleway: 'Raleway', sans-serif; // dobro, W ok bas je watch
+$comforta: 'Comfortaa', cursive; // citko, YOUR BAG je kul
+$montserat: 'Montserrat', sans-serif; // msm da mg brisati
+$jaldi: 'Jaldi', sans-serif; // ok, sitniji, nista posebno
+$arsenal: 'Arsenal', sans-serif; // dobro, izduzeno onako, nije zaokreuzeno kao prethodni, kao sans
 
 // shadow
 $box-shadow-btn: 0 1rem 2rem rgba($black2, .2); 

@@ -4,42 +4,27 @@
     &:visited {
         text-transform: uppercase;
         text-decoration: none;
-        padding: 1.5rem 4rem;
+        padding: 1.5rem 6rem;
         display: inline-block; /* ako zelis da stavis padding, ili width, height elementu */
-        border-radius: 2rem;
+        border-radius: .2rem;
         border: none;
         cursor: pointer;
         // <button> nema :link, i :visited, zato ovi propertyji gore za :link, i :visited ne mogu biti aplajd na ovaj <button> bez obz sto koristimo .btn klasu, pa cemo samo dodati &
+        background: $black2;
+        color: $c7;
+        font-family: $comforta;
+        letter-spacing: .2rem;
         transition: all .2s;
     }
 
     &:hover {
-        transform: translateY(-3px); /* pomeramo na hover dugme na gore za 3px */
-        box-shadow: 0 1rem 2rem rgba($black2, .2); /* x y blur color */
-
-        &::after {
-            transform: scaleX(1.4) scaleY(1.6);
-            opacity: 0; 
-        }
+        transform: translateY(-.1rem); /* pomeramo na hover dugme na gore za 3px */
     }
 
     &:active,
     &:focus { // fokus je zbog plavog rama oko dugmeta kad se klikne, dakle outline: none
         outline: none;
-        transform: translateY(-1px); /* kada se klikne  */
+        transform: translateY(-.2rem); /* kada se klikne  */
         box-shadow: 0 .5rem 1rem rgba($black2, .2); /* x y blur color */
-    }
-
-    &::after { /* ponasa se kao recimo children btn-a  */
-        content: "";
-        display: inline-block;
-        height: 100%; /* 100% od btn-a */
-        width: 100%; /* 100% od btn-a */
-        border-radius: 10rem;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        transition: all .4s;
     }
 }

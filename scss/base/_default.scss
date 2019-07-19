@@ -1,0 +1,36 @@
+svg {
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    &:hover {
+        fill: $gold;
+        transform: translateY(-.2rem);
+    }
+}
+ul { list-style-type: none; }
+a { text-decoration: none; color: inherit; }
+
+.txt-img-color {
+    // background-image: ;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.transition-3 {
+    transition: all .3s ease-in-out;
+}
+
+.transition-5 {
+    transition: all .5s ease-in-out;
+}
+
+.nav-bag-same {
+    background: $white;
+    width: 40vw;
+    height: 100vh;
+    position: fixed;
+    top: 9.2rem;
+    @extend .transition-5;
+}
