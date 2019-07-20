@@ -1,0 +1,34 @@
+-webkit-animation-name: playBtn;
+-webkit-animation-duration: .5s; 
+-webkit-animation-timing-function: ease-in-out;
+-webkit-animation-direction: alternate;
+-webkit-animation-fill-mode: none;
+-webkit-animation-play-state: running; 
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-delay: 0s;
+
+-moz-animation-name: playBtn;
+-moz-animation-duration: .5s; 
+-moz-animation-timing-function: ease-in-out;
+-moz-animation-direction: alternate;
+-moz-animation-fill-mode: none;
+-moz-animation-play-state: running; 
+-moz-animation-iteration-count: infinite;
+-moz-animation-delay: 0s;
+
+
+animation-name: playBtn;
+
+animation-duration: .5s; 
+
+animation-timing-function: ease-in-out; // linear
+
+animation-direction: alternate; // normal | reverse | alternate | alternate-reverse
+
+animation-fill-mode: none; // none | forwards | backwards | both. Stil elementa kada animacija nije pokrenuta, iliti pre nego sto pocne ili nakon sto se zavrsi ili oboje
+
+animation-play-state: running; // running | paused
+
+animation-iteration-count: infinite; // broj |infinite | initial | inherit - koliko x se neka animacija vrsi, infinite je for-ever fazon
+
+animation-delay: 0s; // odlaganje animacije u sekundama. Ovo je recimo dobro za ono kad se ucita stranica pa na skroll da se dodje do nekog elemant pa se on onako pojavi

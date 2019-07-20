@@ -1,10 +1,13 @@
 .header {
     grid-area: header;
-    background-image: linear-gradient(rgba($black2, .5), rgba($black2, .5)), url('../img/bg-3.jpg');
+    background-image: linear-gradient(rgba($black, .5), rgba($black, .5)), url('../img/bg-3.jpg');
     filter: blur(0.1rem);
     background-size: cover;
     overflow: hidden;
     height: 100vh;
+    // background-position: center center;
+    // animation: move 30s infinite linear;
+    // will-change: transform;
     // z-index: 1;
 
     // grid-column: center-start / center-end;

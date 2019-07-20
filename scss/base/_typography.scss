@@ -1,27 +1,38 @@
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 // .h1 {
     // @extend %h-default;
 // }
 
-.h2 {
+.h2 { // ideti u basinat
     text-transform: uppercase;
     font-weight: 400;
     color: orangered;
     font-size: 1.2rem;
-    // background: 
 }   
 
-.h3 {
-    color: $black2;
-    font-size: 3rem;
+.h3 { // title
+   font-size: 1.6;
+//    color: 
 }
 
-.h4 {
+.h4 { // brand
+   font-size: 1.2rem;
+   opacity: .7;
+   font-weight: 500;
+   font-family: $poppins;
+}
+
+.h5 {
+    font-size: 2rem;
     font-family: $comforta;
     letter-spacing: .4rem;
     // color: $gold;
     @extend .txt-img-color;
     background-image: $gold-gradient;
+}
+
+.h6 {
+    font: 2rem $poppins;
 }

@@ -15,14 +15,22 @@
 </head>
 <body class="grid-container">
 <!-- ==================== ASIDE SIDEBAR 1 ==================== -->
-        <aside class="sidebar__1">
-            SIDEBAR1
+        <aside class="sidebar-1">
+            <div class="sidebar-1__copy">
+                &copy; 2019 code by bires marta
+            </div>
+
+            <div class="side-after">&nbsp;</div>
         </aside>
 <!-- ==================== END ASIDE SIDEBAR 1 ==================== -->
 
 <!-- ==================== ASIDE SIDEBAR 2 ==================== -->
-        <aside class="sidebar__2">
-            SIDEBAR2
+        <aside class="sidebar-2">
+            <div class="sidebar-2__free-ship">
+                free worldwide shipping over $299
+            </div>
+
+            <div class="side-after">&nbsp;</div>
         </aside>
 <!-- ==================== END ASIDE SIDEBAR 2 ==================== -->
 
@@ -71,9 +79,9 @@
             <div class="menu__logo logo">
                 <a href="index.html">
                     WTT
-                    <i class="logo__kais">=</i>
+                    <!-- <i class="logo__kais">=</i>
                     <span class="logo__clock">&nbsp;</span>
-                    <i class="logo__kais">=</i>
+                    <i class="logo__kais">=</i> -->
                 </a>
             </div>
 
@@ -97,12 +105,184 @@
                     </svg>
                 </div>
 
-                <div class="bag">
-                    <h3 class="h4 mb-3">YOUR BAG</h3>
+                <!-- DEFAULT BAG, EMPTY -->
+                <!-- <div class="bag">
+                    <h5 class="h5 mb-3">YOUR BAG</h5>
                     <span class="bag__hr mb-3">&nbsp;</span>
                     <p class="bag__noitems mb-2">YOU HAVE NO ITEMS IN YOUR SHOPPING BAG.</p>
                     <button class="btn">CONTINUE SHOPPING</button>
+                </div> -->
+
+                <!-- PRIMER PUNOG BAG -->
+                <div class="bag">
+                    <h5 class="h5 mb-3">YOUR BAG</h5>
+                    <span class="bag__hr mb-3">&nbsp;</span>
+
+                    <div class="bag__content">
+                        <div class="item">
+                            <div class="item__img-container">
+                                <img src="./img/products/051.png" class="item__img" alt="product">
+                            </div>
+                            <div class="item__about">
+                                <h4 class="h4 item__title">titletitletittitlele</h4>
+                                <h6 class="h4 item__brand">brand</h6>
+                                <h5 class="h4 item__price">$160.33</h5>
+                            </div>
+                            <div class="item__up-down">
+                                <span class="amount-down" data-id="2">-</span>
+                                <span class="amount" data-id="2">1</span>
+                                <span class="amount-up" data-id="2">+</span>
+                            </div>
+
+                            <div class="item__remove" data-id="2">
+                                <svg>
+                                    <use xlink:href="img/sprite.svg#cross-out"></use>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="item__img-container">
+                                <img src="./img/products/002.png" class="item__img" alt="product">
+                            </div>
+                            <div class="item__about">
+                                <h4 class="h4 item__title">titletitlettitleitle</h4>
+                                <h6 class="h4 item__brand">brand</h6>
+                                <h5 class="h4 item__price">$160.33</h5>
+                            </div>
+                            <div class="item__up-down">
+                                <span class="amount-down" data-id="2">-</span>
+                                <span class="amount" data-id="2">1</span>
+                                <span class="amount-up" data-id="2">+</span>
+                            </div>
+
+                            <div class="item__remove" data-id="2">
+                                <svg>
+                                    <use xlink:href="img/sprite.svg#cross-out"></use>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="item__img-container">
+                                <img src="./img/products/071.png" class="item__img" alt="product">
+                            </div>
+                            <div class="item__about">
+                                <h4 class="h4 item__title">titletitletitletitle</h4>
+                                <h6 class="h4 item__brand">brand</h6>
+                                <h5 class="h4 item__price">$160.33</h5>
+                            </div>
+                            <div class="item__up-down">
+                                <span class="amount-down" data-id="2">-</span>
+                                <span class="amount" data-id="2">1</span>
+                                <span class="amount-up" data-id="2">+</span>
+                            </div>
+
+                            <div class="item__remove" data-id="2">
+                                <svg>
+                                    <use xlink:href="img/sprite.svg#cross-out"></use>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="item__img-container">
+                                <img src="./img/products/073.png" class="item__img" alt="product">
+                            </div>
+                            <div class="item__about">
+                                <h4 class="h4 item__title">titletitletitletitle</h4>
+                                <h6 class="h4 item__brand">brand</h6>
+                                <h5 class="h4 item__price">$160.33</h5>
+                            </div>
+                            <div class="item__up-down">
+                                <span class="amount-down" data-id="2">-</span>
+                                <span class="amount" data-id="2">1</span>
+                                <span class="amount-up" data-id="2">+</span>
+                            </div>
+
+                            <div class="item__remove" data-id="2">
+                                <svg>
+                                    <use xlink:href="img/sprite.svg#cross-out"></use>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="item__img-container">
+                                <img src="./img/products/040.png" class="item__img" alt="product">
+                            </div>
+                            <div class="item__about">
+                                <h4 class="h4 item__title">titletitletitletitle</h4>
+                                <h6 class="h4 item__brand">brand</h6>
+                                <h5 class="h4 item__price">$160.33</h5>
+                            </div>
+                            <div class="item__up-down">
+                                <span class="amount-down" data-id="2">-</span>
+                                <span class="amount" data-id="2">1</span>
+                                <span class="amount-up" data-id="2">+</span>
+                            </div>
+
+                            <div class="item__remove" data-id="2">
+                                <svg>
+                                    <use xlink:href="img/sprite.svg#cross-out"></use>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="item__img-container">
+                                <img src="./img/products/045.png" class="item__img" alt="product">
+                            </div>
+                            <div class="item__about">
+                                <h4 class="h4 item__title">titletitletitletitle</h4>
+                                <h6 class="h4 item__brand">brand</h6>
+                                <h5 class="h4 item__price">$160.33</h5>
+                            </div>
+                            <div class="item__up-down">
+                                <span class="amount-down" data-id="2">-</span>
+                                <span class="amount" data-id="2">1</span>
+                                <span class="amount-up" data-id="2">+</span>
+                            </div>
+
+                            <div class="item__remove" data-id="2">
+                                <svg>
+                                    <use xlink:href="img/sprite.svg#cross-out"></use>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="item__img-container">
+                                <img src="./img/products/074.png" class="item__img" alt="product">
+                            </div>
+                            <div class="item__about">
+                                <h4 class="h4 item__title">titletitletitletitle</h4>
+                                <h6 class="h4 item__brand">brand</h6>
+                                <h5 class="h4 item__price">$160.33</h5>
+                            </div>
+                            <div class="item__up-down">
+                                <span class="amount-down btn" data-id="2">-</span>
+                                <span class="amount" data-id="2">1</span>
+                                <span class="amount-up btn" data-id="2">+</span>
+                            </div>
+
+                            <div class="item__remove" data-id="2">
+                                <svg>
+                                    <use xlink:href="img/sprite.svg#cross-out"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bag__footer">
+                        <h6 class="h6 mb-1">your total: $<span class="bag__total">0</span></h6>
+                        <div class="hr2 mb-3">&nbsp;</div>
+                        <button class="btn btn--black bag__checkout mb-2">CHECKOUT</button><br>
+                        <button class="btn btn--silver bag__clear">CLEAR BAG</button>
+                    </div>
+
                 </div>
+
             </div>
         </section>
 <!-- ==================== END SECTION MENU ==================== -->
@@ -110,7 +290,7 @@
 
 <!-- ==================== HEADER ==================== -->
         <header class="header">
-            
+            <!-- <div class="header__bg"></div> -->
         </header>
 <!-- ==================== END HEADER ==================== -->
 

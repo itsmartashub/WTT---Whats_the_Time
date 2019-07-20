@@ -21,7 +21,7 @@
     &__icon {
         width: 5.2rem;
         height: .4rem;
-        background: $black2;
+        background: $black;
         position: relative;
         border-radius: 2px;
         @extend .transition-5;
@@ -55,7 +55,6 @@
         // position: fixed;
         // top: 9.2rem;
         @extend .nav-bag-same;
-        z-index: 1;
         padding: 0 0 0 3vw;
         transform: translateX(-200%);
         display: grid;
@@ -72,18 +71,56 @@
 
         &-link {
             cursor: pointer;
-            @extend .transition-3;
+            // @extend .transition-3;
             
             a { 
                 display: inline-block;
                 height: 100%;
-                border-bottom: .3rem solid transparent;
-                @extend .transition-3;
+                opacity: .6;
+                position: relative;
+                padding: 0 2vw;
+                // @extend .transition-5;
+                transition:-webkit-transform .4s cubic-bezier(0.620, 0.005, 0.000, 1.005);
+                // z-index: 2;
+
+                // CROSS LINE EFFECT
+                &::before {
+                    width: 130%;
+                    height: .6rem;
+                    border: .2rem solid $white;
+                    @extend .cross-line;
+
+                    // border-radius: .2rem;
+                    // background: $black;
+                    // content: '';
+                    // position: absolute;
+                    // display: block;
+                    // top: 50%;
+                    // left: 0;
+                    // transform-origin: right top;
+                    // transform: scale(0, 1);  
+                    // transition: transform .3s $cub-1;
+                    // z-index: -1;
+                }
             }
             
-            &:hover a {
-                transform: translateX(2rem);
-                border-bottom: .3rem solid $black2;
+            &:hover {
+                a {
+                    opacity: 1;
+                    // animation: .8s toRight infinite ease-in-out;
+                    // animation-delay: .1s;
+                    transform: translateX(2.5rem);
+        
+                    &::before {
+                        // animation: .8s crossLine infinite ease-in-out;
+                        @extend .cross-line-hover;
+                        // transform: scale(1, 1);
+                        // transform-origin: left top;
+                        
+                    }
+                }
+
+                
             }
         }
 
@@ -95,6 +132,38 @@
             align-self: start;
             background-image: $gold-gradient;
             @extend .txt-img-color;
+            cursor: pointer;
+            position: relative;
+            @extend .transition-2;
+
+            &::before {
+                width: 40%;
+                // border: .1rem solid $white;
+                height: .1rem;
+                @extend .cross-line;
+
+                // border-radius: .2rem;
+                // background: $black;
+                // content: '';
+                // position: absolute;
+                // display: block;
+                // top: 50%;
+                // left: 0;
+                // transform-origin: right top;
+                // transform: scale(0, 1);  
+                // transition:-webkit-transform .3s $cub-1;
+            }
+
+            &:hover {
+                color: $black;
+                transform: translateX(2rem);
+                &::before {
+                    @extend .cross-line-hover;
+                    // transform: scale(1, 1);
+                    // transform-origin: left top;
+                }
+                
+            }
         }
 
         &-social {

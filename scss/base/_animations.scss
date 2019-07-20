@@ -1,0 +1,159 @@
+@keyframes crossLine {
+    from {
+        transform-origin: right top;
+        transform: scale(0,1);
+    }
+
+    to {
+        transform: scale(1,1);
+        transform-origin: left top;
+    }
+
+
+}
+
+@keyframes toRight {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-2rem);
+    }
+
+    100% {
+        transform: translateX(2rem);
+    }
+}
+
+// @keyframes fromBottom {
+//     0% {
+//         opacity: 0;
+//         transform: translateX(-20rem);
+//     }
+
+//     100% {
+//         opacity: 1;
+//         transform: translate(0);
+//     }
+// }
+
+@keyframes fromBottomLeft {
+    0% {
+        opacity: 0;
+        // visibility: hidden;
+        transform: translate(-300%, 200%);
+    }
+
+    // 50% {
+    //     opacity: .3;
+    //     transform: translate(-150%, 150);
+    // }
+
+    // 80% {
+    //     opacity: .7;
+    //     transform: translate(-100, 100);
+    // }
+
+    100% {
+        opacity: 1;
+        // visibility: visible;
+        transform: translate(0, 0);
+    }
+}
+
+
+@keyframes pulsingScale {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(.9);
+    }
+}
+
+@keyframes playBtn {
+    0% {
+        width: 0;
+        height: 0;
+        border-top-color: #fff;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+
+    25% {
+        width: 100%;
+        height: 0;
+        border-top-color: #fff;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+        border-top-radius: 1rem; 
+
+    }
+
+    50% {
+        width: 100%;
+        height: 100%;
+        border-top-color: #fff;
+        border-right-color: #fff;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+
+    75% {
+        width: 100%;
+        height: 100%;
+        border-top-color: #fff;
+        border-right-color: #fff;
+        border-bottom-color: #fff;
+        border-left-color: transparent;
+    }
+
+    100% {
+        width: 100%;
+        height: 100%;
+        border-top-color: #fff;
+        border-right-color: #fff;
+        border-bottom-color: #fff;
+        border-left-color: #fff;
+    }
+
+}
+
+@keyframes hoverBtn {
+    0% {
+        opacity: 1;
+        transform: translate(-100%, 50%);
+    }
+
+    100% {
+        transform: translate(100%, -50%);
+        opacity: 1; 
+        z-index: 1000;
+    }
+}
+
+
+
+// za bg
+// @keyframes move {
+	
+// 	25% {
+// 		transform: translateY(50px) translateX(0);
+// 	}
+	
+// 	50% {
+// 		transform: translateY(0px) translateX(50px);
+// 	}
+	
+// 	75% {
+// 		transform: translateY(50px) translateX(0);
+// 	}
+// }
+// background-size: 150%;
+// background-position: center center;
+// animation: move 30s infinite linear;
+// will-change: transform;

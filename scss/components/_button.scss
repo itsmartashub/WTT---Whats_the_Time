@@ -6,25 +6,70 @@
         text-decoration: none;
         padding: 1.5rem 6rem;
         display: inline-block; /* ako zelis da stavis padding, ili width, height elementu */
-        border-radius: .2rem;
+        border-radius: .1rem;
         border: none;
         cursor: pointer;
         // <button> nema :link, i :visited, zato ovi propertyji gore za :link, i :visited ne mogu biti aplajd na ovaj <button> bez obz sto koristimo .btn klasu, pa cemo samo dodati &
-        background: $black2;
+        background: $black-gradient;
         color: $c7;
         font-family: $comforta;
         letter-spacing: .2rem;
-        transition: all .2s;
+        position: relative;
+        overflow: hidden;
+        // box-shadow: $box-shadow-inset-black;
+        @extend .transition-2;
+    }
+
+    &::after {
+        content: '';
+        display: inline-block;
+        width: 120%; // 100% od btn-a
+        height: 120%; // 100% od btn-a
+        position: absolute;
+        // background: rgba($black, .2); // moras napraviti za svako dugme helper klasi -hover-BtnColor (black, silver, gold...)
+        top: 0;
+        left: 0;
+        opacity: 0;
     }
 
     &:hover {
-        transform: translateY(-.1rem); /* pomeramo na hover dugme na gore za 3px */
+        // transform: translateY(-.1rem); /* pomeramo na hover dugme na gore za 3px */
+        &::after {
+            -moz-animation-name: hoverBtn;
+            -moz-animation-duration: .5s; 
+            -moz-animation-timing-function: ease-in-out;
+            -moz-animation-fill-mode: backwards;
+
+            -webkit-animation-name: hoverBtn;
+            -webkit-animation-duration: .5s; 
+            -webkit-animation-timing-function: ease-in-out;
+            -webkit-animation-fill-mode: backwards;
+
+            animation-name: hoverBtn;
+            animation-duration: .5s; 
+            animation-fill-mode: backwards;
+        }
     }
 
     &:active,
     &:focus { // fokus je zbog plavog rama oko dugmeta kad se klikne, dakle outline: none
         outline: none;
         transform: translateY(-.2rem); /* kada se klikne  */
-        box-shadow: 0 .5rem 1rem rgba($black2, .2); /* x y blur color */
+        box-shadow: 0 .5rem 1rem rgba($black, .2); /* x y blur color */
+    }
+
+    &--silver {
+        background: $article-gradient;
+        color: $black;
+        box-shadow: $box-shadow-inset-silver;
+        
+        &:hover::after { background: $silver; }
+    }
+
+    &--black {
+        background: $black-gradient;
+        color: $white;
+        
+        &:hover::after { background: $black; }
     }
 }
