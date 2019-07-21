@@ -1,5 +1,5 @@
 .bag {
-    // background: $white;
+    // background: $bg-color;
     // width: 40vw;
     // height: 100vh;
     // position: fixed;
@@ -7,7 +7,7 @@
     @extend .nav-bag-same;
     right: 6vw;
     padding: 3vh 0;
-    transform: translateX(200%);
+    // transform: translateX(200%);
     text-align: center;
     
 
@@ -16,7 +16,7 @@
     &__content {
         max-height: 50vh;
         overflow-y: scroll;
-        box-shadow: inset 0 -.5rem 1rem rgba($black, .1);
+        box-shadow: inset 0 -.5rem 1rem rgba($teget, .1);
     }  
     
     &__hr {
@@ -86,16 +86,16 @@
                 // display: inline-block;
                 font-weight: bold;
                 font-size: 2rem;
-                background: $black-gradient;
-                color: $white;
+                background: $teget-gradient;
+                color: $bg-color;
                 padding: .1rem .8rem;
                 cursor: pointer;
                 @extend .transition-2;
             }
 
             .amount-down:hover, .amount-up:hover {
-                background: $gold-gradient;
-                color: $black;            }
+                background: $lgold-gradient;
+                color: $teget;            }
         }   
 
         // ------------- REMOVE BTN -------------
@@ -132,11 +132,11 @@
 }
 
 .bag__content::-webkit-scrollbar-track { 
-    background: $white;
+    background: $bg-color;
 }
 
 .bag__content::-webkit-scrollbar-thumb { 
-   background: $gold-gradient;
+   background: $lgold-gradient;
 //    border-top-left-radius: 0;
 //    border-top-right-radius: 0;
    border-bottom-left-radius: .1rem;
@@ -144,5 +144,5 @@
 }
 
 .bag__content::-webkit-scrollbar-corner, .bag::-webkit-scrollbar-button  { 
-    background: $white;
+    background: $bg-color;
 }

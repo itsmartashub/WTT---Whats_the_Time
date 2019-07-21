@@ -21,8 +21,8 @@ body {
     font-family: $sans-o;
     font-weight: 300;
     font-size: 1.5rem;
-    color: $black;
-    background: $white;
+    color: $teget;
+    background: $bg-color;
 }
 
 body::-webkit-scrollbar { 
@@ -30,24 +30,24 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-button { 
-    // background: $white;
+    // background: $bg-color;
 }
 
 body::-webkit-scrollbar-track { 
-    background: $black;
+    background: $darkblue-3;
 }
 
 // body::-webkit-scrollbar-track-piece { 
-//     background: $black;
+//     background: $darkblue-3;
 // }
 
 body::-webkit-scrollbar-thumb { 
-    background: $gold-gradient;
+    background: $lgold-gradient;
     border-radius: 5rem;
 }
 
 body::-webkit-scrollbar-corner { 
-    background: $black;
+    background: $darkblue-3;
 }
 
 body::-webkit-resizer {
@@ -55,8 +55,8 @@ body::-webkit-resizer {
 }
 
 ::selection {
-    background: $black;
-    color: $white;
+    background: $darkblue-3;
+    color: $bg-color;
 }
 
 .grid-container {

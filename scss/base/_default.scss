@@ -2,9 +2,10 @@ svg {
     width: 2.5rem;
     height: 2.5rem;
     cursor: pointer;
+    fill: $teget;
     transition: all .2s ease-in-out;
     &:hover {
-        fill: $gold;
+        fill: $lgold;
         transform: translateY(-.2rem);
     }
 }
@@ -29,9 +30,12 @@ a { text-decoration: none; color: inherit; }
 .transition-5 {
     transition: all .5s $cub-1;
 }
+.transition-transform {
+    transition: transform .3s $cub-1, background .3s $cub-1;
+}
 
 .nav-bag-same {
-    background: $white;
+    background: $bg-color;
     min-width: 35vw;
     height: 90vh;
     position: fixed;
@@ -43,8 +47,8 @@ a { text-decoration: none; color: inherit; }
 .cross-line { // za &::before
     // width: 130%;
     // height: .5rem;
-    // border: .2rem solid $white;
-    // background: $black;
+    // border: .2rem solid $bg-color;
+    // background: $teget;
     content: '';
     background: currentColor;
     border-radius: .2rem;
@@ -57,7 +61,8 @@ a { text-decoration: none; color: inherit; }
     transform-origin: 100% 50%; // right top
     transform: scale(0, 1);
     // @extend .transition-3;  
-    transition: transform .3s $cub-1, background .3s $cub-1;
+    @extend .transition-transform;
+    // transition: transform .3s $cub-1, background .3s $cub-1;
 }
 // a za hover:
 .cross-line-hover {

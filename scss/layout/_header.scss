@@ -24,15 +24,16 @@
         height: 100%;
         top: 0;
         left: 0;
-        background-image: linear-gradient(rgba($black, .7), rgba($black, .7)), url('../img/bg-25.jpg');
+        background-image: linear-gradient(rgba($darkblue-3, .4), rgba($darkblue-3, .4)), url('../img/bg-13.jpg');
         background-size: cover;
-        box-shadow: $box-shadow-inset-bg;
+        filter: blur(.4rem);
+        // box-shadow: $box-shadow-inset-bg;
 
-        background-blend-mode:screen;
+        // background-blend-mode:screen;
         z-index: -1;
         transform-origin: 50% 65%;
         // transition: transform 15s;
-        animation: zooming 12s infinite ease-in-out; 
+        // animation: zooming 12s infinite ease-in-out; 
     }
 
     // &:hover &__bg {
@@ -52,22 +53,34 @@
         top: 0; // bez ovoga je onaj kul efekat
         left: 0; // bez ovoga je onaj kul efekat
         
-        background: linear-gradient(rgba(#ccc, .4), rgba(#ccc, .4));
+        // background: linear-gradient(rgba(#ccc, .4), rgba(#ccc, .4));
+        box-shadow: $box-shadow-inset-blur;
         filter: blur(.2rem);
     }
 
     &__title {
-        // z-index: 55;
+        @extend .txt-img-color;
+        background-image: $lgold-gradient;
         font-family: $logo;
         font-size: 20rem;
+        // z-index: 55;
+        // font-family: $logo;
+        // font-size: 20rem;
         // text-shadow: 0 10rem 10rem rgba(#000, .8);
     }
 
     &__subtitle {
+        @extend .txt-img-color;
+        background-image: $teget-gradient;
+        text-transform: uppercase;
         font-size: 4rem;
         font-weight: 500;
         font-family: $arsenal; // arsenal nije los, sans-t
         letter-spacing: .4rem;
+                // font-size: 4rem;
+        // font-weight: 500;
+        // font-family: $arsenal; // arsenal nije los, sans-t
+        // letter-spacing: .4rem;
         transform: translateY(-2rem);
     }
 }

@@ -9,11 +9,13 @@
 
     100% {
         transform: scale(1);
-        // box-shadow: inset 2rem 2rem 2rem rgba($black, .5);  
+        // box-shadow: inset 2rem 2rem 2rem rgba($teget, .5);  
     }
 }
 
+@keyframes hoverBtn {
 
+}
 
 
 
@@ -145,18 +147,7 @@
 
 }
 
-@keyframes hoverBtn {
-    0% {
-        opacity: 1;
-        transform: translate(-100%, 50%);
-    }
 
-    100% {
-        transform: translate(100%, -50%);
-        opacity: 1; 
-        z-index: 1000;
-    }
-}
 
 
 

@@ -13,6 +13,7 @@ $c8: #FDFDFB;
 $c9: #FEFCFB;
 $c10: #E8E8E8; // 5-9
 
+$bg-color: #FEFCFB;
 $white: #fcfcfb;
 // $white: #efecea;
 // $white: #F4F4F4;
@@ -30,14 +31,74 @@ $alfa-title: #3a3c49;
 $alfa-meni-bg: #E2DED9; // kad je beo txt
 $alfa-box-bg: #F4F4F4;
 
-$black:#222222;
-// $black: rgb(42,41,41);
+$darkblue-31: #16161B;
+$darkblue-32: #002b31;
+$darkblue-33: #393B3C;
 
-$black1: #16161B;
-$black2: #002b31;
-$black3: #393B3C;
 
-$black-gradient: linear-gradient(90deg, rgba(42,41,41,1) 0%, rgba(61,61,61,1) 45%, rgba(42,41,41,1) 100%);
+// --------------------------------------------
+$darkblue-1: #1E2130;
+$darkblue-2: #252B39;
+$darkblue-3: #182E45;
+$darkbrown-1: #4A2222;
+$darkbrown-2: #532B2B;
+
+$darkbrown-3: #582826;
+$darkbrown-4: #5F2F2D;
+$darkbrown-5: #724240;
+$darkbrown-6: #784846;
+$darkbrown-7: #5A2A28;
+
+$dbw-1: #5B2D2D;
+$dbw-2: #613431;
+$dbw-3: #653835;
+$dbw-4: #663936;
+$dbw-5: #683B38;
+$dbw-6: #6E413E;
+$dbr-1: #3A1B19;
+$dbr-2: #3F201E;
+$dbr-3: #452624;
+$brown-gradient: radial-gradient( circle farthest-corner at 0% 0.5%,  rgba($darkbrown-3, 1) 0.1%, rgba($darkbrown-6, 1) 100.2% ); 
+
+// $f: #642E2C; 
+$dbl-1: #06162D;
+$dbl-2: #051931;
+$dbl-3: #243046;
+
+// $teget: #34303F;
+$teget: rgb(51, 44, 85);
+$teget-1: #423C48;
+// $teget-gradient: linear-gradient(to bottom right rgba(#34303F, 1), rgba(#39325E, 1));
+$teget-gradient: radial-gradient( circle farthest-corner at 0% 0.5%,  rgba(#34303F, 1) 0.1%, rgba(#39325E, 1) 100.2% ); 
+
+// $lgold: #B39674;
+$lgold: #9C714E;
+$lgold-1: #765A45;
+$lgold-2: #836146;
+$lgold-3: #8D6949;
+$lgold-4: #9C714E;
+$lgold-5: #A67952;
+$lgold-6: #B28159;
+$lgold-7: #BC8860;
+$lgold-8: #C4936A;
+$lgold-9: #CB9A71;
+
+$lgold-gradient: radial-gradient( circle farthest-corner at 0% 0.5%,  rgba($lgold-4, 1) 0.1%, rgba($lgold-9, 1) 100.2% );
+
+// $bg-gradient: linear-gradient(90deg, rgba(#06162D, .1) 0%, rgba(#051931, .1) 45%, rgba(#243046, .1) 100%) ;
+$bg-gradient: linear-gradient(to bottom right rgba(250,250,250,1), rgba(230,230,230,1));
+// --------------------------------------------
+
+
+
+
+
+
+
+
+
+
+$darkblue-3-gradient: linear-gradient(90deg, rgba(42,41,41,1) 0%, rgba(61,61,61,1) 45%, rgba(42,41,41,1) 100%);
 
 $red: #FF231B;
 $red1: #d92b04;
@@ -52,17 +113,16 @@ $article-gradient: radial-gradient( circle farthest-corner at 0% 0.5%,  rgba(241
 $article-gradient2: linear-gradient( 111.5deg,  rgba(242,246,254,1) 0.3%, rgba(227,233,252,1) 99.1% ); // vise na plavo
 $article-gradient3: radial-gradient( circle 571px at 51.4% 22.8%,  rgba(250,250,250,1) 4.1%, rgba(230,230,230,1) 100.2% ); // moj kao
 
-$gold-gradient: linear-gradient(to bottom right, #98743E, #E3C394);
-$gold: #967140;
-$gold2: #E3C394;
+// $gold: #967140;
 
 // SHADOW
-$box-shadow-btn: 0 1rem 2rem rgba($black, .2); 
+$box-shadow-btn: 0 1rem 2rem rgba($darkblue-3, .2); 
 $box-shadow-item-img: 2px 5px 10px -4px rgba(0,0,0,0.5);
 
 $box-shadow-inset: inset 0 0 1.5rem 1rem rgba($c7, 0.5);
-$box-shadow-inset-gold: inset 0 0 .8rem 1rem rgba($gold, 0.5);
-$box-shadow-inset-black: inset 0 0 .8rem 1rem rgba($black, 0.5);
+$box-shadow-inset-blur: inset 1rem 1rem 12rem 1rem rgba($c7, 0.2), inset -1rem -1rem 12rem 1rem rgba($c7, 0.2);
+// $box-shadow-inset-gold: inset 0 0 .8rem 1rem rgba($gold, 0.5);
+$box-shadow-inset-black: inset 0 0 .8rem 1rem rgba($darkblue-3, 0.5);
 $box-shadow-inset-silver: inset 0 0 .8rem 1rem rgba($silver2, 1);
 $box-shadow-inset-bg: inset 12rem 10rem 20rem rgba(#000, .2), inset -12rem -10rem 20rem rgba(#000, .2);
 
@@ -94,3 +154,52 @@ $cub-3: cubic-bezier(.17,.67,.83,.67);
 $cub-2: cubic-bezier(0,.37,.97,.08);
 $cub-4: cubic-bezier(.17,.67,.83,.67);
 $cub-1: cubic-bezier(0.65, 0.05, 0.36, 1);
+
+
+
+$darkblue-1: #1E2130;
+$darkblue-2: #252B39;
+$darkblue-3: #182E45;
+$darkbrown-1: #4A2222;
+$darkbrown-2: #532B2B;
+
+$darkbrown-3: #582826;
+$darkbrown-4: #5F2F2D;
+$darkbrown-5: #724240;
+$darkbrown-6: #784846;
+$darkbrown-7: #5A2A28;
+
+$dbw-1: #5B2D2D;
+$dbw-2: #613431;
+$dbw-3: #653835;
+$dbw-4: #663936;
+$dbw-5: #683B38;
+$dbw-6: #6E413E;
+$dbr-1: #3A1B19;
+$dbr-2: #3F201E;
+$dbr-3: #452624;
+$brown-gradient: radial-gradient( circle farthest-corner at 0% 0.5%,  rgba($darkbrown-3, 1) 0.1%, rgba($darkbrown-6, 1) 100.2% ); 
+
+// $f: #642E2C; 
+$dbl-1: #06162D;
+$dbl-2: #051931;
+$dbl-3: #243046;
+
+$teget-1: #423C48;
+// $teget-gradient: linear-gradient(to bottom right rgba(#34303F, 1), rgba(#39325E, 1));
+$teget-gradient: radial-gradient( circle farthest-corner at 0% 0.5%,  rgba(#34303F, 1) 0.1%, rgba(#39325E, 1) 100.2% ); 
+
+$gold: #B39674;
+$lgold: #E3C394;
+$lgold-1: #765A45;
+$lgold-2: #836146;
+$lgold-3: #8D6949;
+$lgold-4: #9C714E;
+$lgold-5: #A67952;
+$lgold-6: #B28159;
+$lgold-7: #BC8860;
+$lgold-8: #C4936A;
+$lgold-9: #CB9A71;
+
+$gold-gradient: linear-gradient(to bottom right, #98743E, #E3C394);
+$lgold-gradient: radial-gradient( circle farthest-corner at 0% 0.5%,  rgba($lgold-4, 1) 0.1%, rgba($lgold-9, 1) 100.2% );

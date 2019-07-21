@@ -1,16 +1,14 @@
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
-}
+   }
+   // @extend %h-default;
 // .h1 {
-    // @extend %h-default;
+   
 // }
 
-.h2 { // ideti u basinat
-    text-transform: uppercase;
-    font-weight: 400;
-    color: orangered;
-    font-size: 1.2rem;
-}   
+// .h2 { // ideti u basinat
+
+// }   
 
 .h3 { // title
    font-size: 1.6;
@@ -30,7 +28,7 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: .4rem;
     // color: $gold;
     @extend .txt-img-color;
-    background-image: $gold-gradient;
+    background-image: $lgold-gradient;
 }
 
 .h6 {

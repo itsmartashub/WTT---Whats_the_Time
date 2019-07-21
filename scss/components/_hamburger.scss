@@ -21,7 +21,7 @@
     &__icon {
         width: 5.2rem;
         height: .4rem;
-        background: $black;
+        background: $teget;
         position: relative;
         border-radius: 2px;
         @extend .transition-5;
@@ -49,7 +49,7 @@
     }
 
     &__nav {
-        // background: $white;
+        // background: $bg-color;
         // width: 40vw;
         // height: 100vh;
         // position: fixed;
@@ -88,11 +88,11 @@
                 &::before {
                     width: 130%;
                     height: .5rem;
-                    border: .2rem solid $white;
+                    border: .2rem solid $bg-color;
                     @extend .cross-line;
 
                     // border-radius: .2rem;
-                    // background: $black;
+                    // background: $teget;
                     // content: '';
                     // position: absolute;
                     // display: block;
@@ -131,7 +131,7 @@
 
         &-email {
             align-self: start;
-            background-image: $gold-gradient;
+            background-image: $lgold-gradient;
             @extend .txt-img-color;
             cursor: pointer;
             position: relative;
@@ -140,14 +140,14 @@
 
             &::before {
                 width: 40%;
-                // border: .1rem solid $white;
+                // border: .1rem solid $bg-color;
                 height: .1rem;
                 @extend .cross-line;
                 top: 53%;
 
 
                 // border-radius: .2rem;
-                // background: $black;
+                // background: $teget;
                 // content: '';
                 // position: absolute;
                 // display: block;
@@ -159,7 +159,7 @@
             }
 
             &:hover {
-                color: $black;
+                color: $teget;
                 transform: translateX(2rem);
                 &::before {
                     @extend .cross-line-hover;
