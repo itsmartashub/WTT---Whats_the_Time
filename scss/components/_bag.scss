@@ -7,15 +7,16 @@
     @extend .nav-bag-same;
     right: 6vw;
     padding: 3vh 0;
-    // transform: translateX(200%);
+    transform: translateX(200%);
     text-align: center;
+    
 
 
 
     &__content {
         max-height: 50vh;
         overflow-y: scroll;
-        box-shadow: inset 0 -.5rem 1rem rgba($black, .1); 
+        box-shadow: inset 0 -.5rem 1rem rgba($black, .1);
     }  
     
     &__hr {
@@ -35,13 +36,12 @@
         display: grid;
         align-items: center;
         grid-template-columns: min-content max-content repeat(2, max-content);
-        grid-column-gap: 3rem;
+        grid-column-gap: 3vw;
         justify-content: center;
         // justify-items: center;
         // margin: 1.5rem 0;
-        border-bottom: .1rem solid rgba($c7, .5);
-        padding: 2rem 0;
-        border-left: .6rem solid transparent;
+        // border-bottom: .1rem solid rgba($c7, .5);
+        padding: 3vh 0;
         @extend .transition-2;
 
         &:hover {
@@ -90,15 +90,12 @@
                 color: $white;
                 padding: .1rem .8rem;
                 cursor: pointer;
-                transform: scale(.95);
                 @extend .transition-2;
             }
 
             .amount-down:hover, .amount-up:hover {
                 background: $gold-gradient;
-                color: $black;
-                transform: scale(1);
-            }
+                color: $black;            }
         }   
 
         // ------------- REMOVE BTN -------------

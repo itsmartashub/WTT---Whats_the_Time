@@ -32,3 +32,7 @@ animation-play-state: running; // running | paused
 animation-iteration-count: infinite; // broj |infinite | initial | inherit - koliko x se neka animacija vrsi, infinite je for-ever fazon
 
 animation-delay: 0s; // odlaganje animacije u sekundama. Ovo je recimo dobro za ono kad se ucita stranica pa na skroll da se dodje do nekog elemant pa se on onako pojavi
+
+
+
+transform: matrix(1, 0, 0, 1, 0, 0); // iz alfa sajta, na sliku recimo stavio pa se pojavi s leva fixirano ka desno

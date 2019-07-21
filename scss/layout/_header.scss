@@ -1,10 +1,19 @@
 .header {
     grid-area: header;
-    background-image: linear-gradient(rgba($black, .5), rgba($black, .5)), url('../img/bg-3.jpg');
-    filter: blur(0.1rem);
-    background-size: cover;
-    overflow: hidden;
+    position: relative;
+    // background-image: linear-gradient(rgba($black, .3), rgba($black, .3)), url('../img/bg-25.jpg');
+    // // filter: blur(0.1rem);
+    // background-size: cover;
+    // background-attachment: fixed;
+    // background-origin: content-box, padding-box; // The background image starts from the upper left corner of the content
+    // background-clip:padding-box;
+    // overflow: hidden;
     height: 100vh;
+    color: $white;
+    text-shadow: 0 1rem 1rem rgba(#000, .8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     // background-position: center center;
     // animation: move 30s infinite linear;
     // will-change: transform;
@@ -12,4 +21,52 @@
 
     // grid-column: center-start / center-end;
     // grid-row: 2/3;
+    // background-blend-mode:screen;
+    // background-
+
+    &__bg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(rgba($black, .3), rgba($black, .3)), url('../img/bg-25.jpg');
+        // filter: blur(0.1rem);
+        background-size: cover;
+        // background-attachment: fixed;
+        // background-origin: content-box, padding-box; // The background image starts from the upper left corner of the content
+        // background-clip:padding-box;
+        // overflow: hidden;
+        height: 100vh;
+        // background-position: center center;
+        // animation: move 30s infinite linear;
+        // will-change: transform;
+        // z-index: 1;
+
+        // grid-column: center-start / center-end;
+        // grid-row: 2/3;
+        background-blend-mode:screen;
+        z-index: -1;
+    }
+
+    &__caption {
+        position: relative;
+        // border: 1px red solid;
+        padding: 5rem 5rem;
+        background: linear-gradient(rgba(#fff, .3), rgba(#fff, .3));
+    }
+    &__blur {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        
+        background: linear-gradient(rgba(#fff, .3), rgba(#fff, .3));
+        filter: blur(.1rem);
+    }
+
+    &__title {
+        // z-index: 55;
+    }
+
+    &__subtitle {
+
+    }
 }

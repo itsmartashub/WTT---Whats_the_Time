@@ -72,6 +72,7 @@
         &-link {
             cursor: pointer;
             // @extend .transition-3;
+            overflow: hidden;
             
             a { 
                 display: inline-block;
@@ -86,7 +87,7 @@
                 // CROSS LINE EFFECT
                 &::before {
                     width: 130%;
-                    height: .6rem;
+                    height: .5rem;
                     border: .2rem solid $white;
                     @extend .cross-line;
 
@@ -135,12 +136,15 @@
             cursor: pointer;
             position: relative;
             @extend .transition-2;
+           
 
             &::before {
                 width: 40%;
                 // border: .1rem solid $white;
                 height: .1rem;
                 @extend .cross-line;
+                top: 53%;
+
 
                 // border-radius: .2rem;
                 // background: $black;

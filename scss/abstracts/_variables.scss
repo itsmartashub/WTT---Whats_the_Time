@@ -14,13 +14,25 @@ $c9: #FEFCFB;
 $c10: #E8E8E8; // 5-9
 
 $white: #fcfcfb;
+// $white: #efecea;
+// $white: #F4F4F4;
 
 $bg: #F1EFE9;
 
 $silver: #e0e2e4; // iz artical-gradienta tamnija
 $silver2: #CECECE;
 
-$black: rgb(42,41,41);;
+// alfa sajt
+$alfa-red: #d43246;
+$alfa-bg: #efecea;
+$alfa-color: #79726e;
+$alfa-title: #3a3c49;
+$alfa-meni-bg: #E2DED9; // kad je beo txt
+$alfa-box-bg: #F4F4F4;
+
+$black:#222222;
+// $black: rgb(42,41,41);
+
 $black1: #16161B;
 $black2: #002b31;
 $black3: #393B3C;
@@ -64,6 +76,13 @@ $medium-m: 'Medium Medium';
 $yess: 'Yessica Regular';
 $qua: 'Quantum';
 
+$logo-zvrlj: 'Just_Sunday';
+$sans-br:'BentonSans Regular';
+$sans-bm:'BentonSans Medium';
+$sans-bl:'BentonSans Light';
+$sans-be:'BentonSans ExtraLight';
+
+
 // GOOGLE FONTS
 $sans-t: 'Tenor Sans', sans-serif; // KUL!
 $sans-o:'Open Sans', sans-serif; // onako
@@ -74,7 +93,8 @@ $montserat: 'Montserrat', sans-serif; // msm da mg brisati
 $jaldi: 'Jaldi', sans-serif; // ok, sitniji, nista posebno
 $arsenal: 'Arsenal', sans-serif; // dobro, izduzeno onako, nije zaokreuzeno kao prethodni, kao sans
 
-$cub-1: cubic-bezier(0.620, 0.005, 0.000, 1.005);
+$cub-5: cubic-bezier(0.620, 0.005, 0.000, 1.005); // ovu koristih
 $cub-3: cubic-bezier(.17,.67,.83,.67);
 $cub-2: cubic-bezier(0,.37,.97,.08);
 $cub-4: cubic-bezier(.17,.67,.83,.67);
+$cub-1: cubic-bezier(0.65, 0.05, 0.36, 1);

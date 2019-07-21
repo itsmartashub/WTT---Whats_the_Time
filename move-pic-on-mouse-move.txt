@@ -1,0 +1,7 @@
+    pic-container.on('mousemove', function(e){
+      $(this).children('.photo').css({'transform-origin': ((e.pageX - $(this).offset().left) / $(this).width()) * 100 + '% ' + ((e.pageY - $(this).offset().top) / $(this).height()) * 100 +'%'});
+    })
+
+
+https://w3bits.com/css-image-hover-zoom/
+https://w3bits.com/labs/css-image-hover-zoom/

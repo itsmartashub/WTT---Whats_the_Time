@@ -32,7 +32,7 @@ a { text-decoration: none; color: inherit; }
 
 .nav-bag-same {
     background: $white;
-    width: 35vw;
+    min-width: 35vw;
     height: 90vh;
     position: fixed;
     top: 9.2rem;
@@ -46,13 +46,15 @@ a { text-decoration: none; color: inherit; }
     // border: .2rem solid $white;
     // background: $black;
     content: '';
-    background: $black;
+    background: currentColor;
     border-radius: .2rem;
     position: absolute;
     display: block;
     top: 50%;
+    // top: calc(50% - .2rem); // .2rem iliti kolika je visina 
     left: 0;
-    transform-origin: right top;
+    // transform-origin: right top;
+    transform-origin: 100% 50%; // right top
     transform: scale(0, 1);
     // @extend .transition-3;  
     transition: transform .3s $cub-1, background .3s $cub-1;
@@ -60,5 +62,11 @@ a { text-decoration: none; color: inherit; }
 // a za hover:
 .cross-line-hover {
     transform: scale(1, 1);
-    transform-origin: left top;
+    transform-origin: 0% 100%; // left top
+    // transform-origin: left top;
+}
+
+.show-bag {
+    display: block;
+    transform: translateX(0);
 }
