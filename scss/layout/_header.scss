@@ -1,72 +1,73 @@
 .header {
     grid-area: header;
+    // display: grid;
+    // grid-template-columns: repeat(4, 1fr);
+    // grid-template-rows: repeat(4, 1fr);
+
     position: relative;
-    // background-image: linear-gradient(rgba($black, .3), rgba($black, .3)), url('../img/bg-25.jpg');
-    // // filter: blur(0.1rem);
-    // background-size: cover;
-    // background-attachment: fixed;
-    // background-origin: content-box, padding-box; // The background image starts from the upper left corner of the content
-    // background-clip:padding-box;
-    // overflow: hidden;
-    height: 100vh;
-    color: $white;
-    text-shadow: 0 1rem 1rem rgba(#000, .8);
+    height: 90vh;
+    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-    // background-position: center center;
-    // animation: move 30s infinite linear;
-    // will-change: transform;
-    // z-index: 1;
+    overflow: hidden;
 
     // grid-column: center-start / center-end;
     // grid-row: 2/3;
-    // background-blend-mode:screen;
-    // background-
+
 
     &__bg {
+        // grid-column: 1/-1;
+        // grid-row: 1/-1;
         position: absolute;
         width: 100%;
         height: 100%;
-        background-image: linear-gradient(rgba($black, .3), rgba($black, .3)), url('../img/bg-25.jpg');
-        // filter: blur(0.1rem);
+        top: 0;
+        left: 0;
+        background-image: linear-gradient(rgba($black, .7), rgba($black, .7)), url('../img/bg-25.jpg');
         background-size: cover;
-        // background-attachment: fixed;
-        // background-origin: content-box, padding-box; // The background image starts from the upper left corner of the content
-        // background-clip:padding-box;
-        // overflow: hidden;
-        height: 100vh;
-        // background-position: center center;
-        // animation: move 30s infinite linear;
-        // will-change: transform;
-        // z-index: 1;
+        box-shadow: $box-shadow-inset-bg;
 
-        // grid-column: center-start / center-end;
-        // grid-row: 2/3;
         background-blend-mode:screen;
         z-index: -1;
+        transform-origin: 50% 65%;
+        // transition: transform 15s;
+        animation: zooming 12s infinite ease-in-out; 
     }
+
+    // &:hover &__bg {
+    //     transform: scale(1.5);
+    // }
 
     &__caption {
         position: relative;
-        // border: 1px red solid;
-        padding: 5rem 5rem;
-        background: linear-gradient(rgba(#fff, .3), rgba(#fff, .3));
+        padding: 8rem 10rem;
+        // border: 1px solid orangered;
+        // background: linear-gradient(rgba(#fff, .3), rgba(#fff, .3)); // dodati za onaj kul efekat
     }
     &__blur {
         position: absolute;
         width: 100%;
         height: 100%;
+        top: 0; // bez ovoga je onaj kul efekat
+        left: 0; // bez ovoga je onaj kul efekat
         
-        background: linear-gradient(rgba(#fff, .3), rgba(#fff, .3));
-        filter: blur(.1rem);
+        background: linear-gradient(rgba(#ccc, .4), rgba(#ccc, .4));
+        filter: blur(.2rem);
     }
 
     &__title {
         // z-index: 55;
+        font-family: $logo;
+        font-size: 20rem;
+        // text-shadow: 0 10rem 10rem rgba(#000, .8);
     }
 
     &__subtitle {
-
+        font-size: 4rem;
+        font-weight: 500;
+        font-family: $arsenal; // arsenal nije los, sans-t
+        letter-spacing: .4rem;
+        transform: translateY(-2rem);
     }
 }

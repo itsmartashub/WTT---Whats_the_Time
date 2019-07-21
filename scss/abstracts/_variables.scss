@@ -64,11 +64,12 @@ $box-shadow-inset: inset 0 0 1.5rem 1rem rgba($c7, 0.5);
 $box-shadow-inset-gold: inset 0 0 .8rem 1rem rgba($gold, 0.5);
 $box-shadow-inset-black: inset 0 0 .8rem 1rem rgba($black, 0.5);
 $box-shadow-inset-silver: inset 0 0 .8rem 1rem rgba($silver2, 1);
+$box-shadow-inset-bg: inset 12rem 10rem 20rem rgba(#000, .2), inset -12rem -10rem 20rem rgba(#000, .2);
 
 
 // FONTS FONT FACE
 $def: 'Coves Light';
-$logo: 'Luxia-Display'; // 'Break Extralight', 'Break Light', 'Break Regular', 'Yessica Regular', 'Quantum'
+// $logo: 'Luxia-Display'; // 'Break Extralight', 'Break Light', 'Break Regular', 'Yessica Regular', 'Quantum'
 $cov: 'Coves Light';
 $lux: 'Luxia-Display';
 $medium-r: 'Medium Regular';
@@ -76,12 +77,7 @@ $medium-m: 'Medium Medium';
 $yess: 'Yessica Regular';
 $qua: 'Quantum';
 
-$logo-zvrlj: 'Just_Sunday';
-$sans-br:'BentonSans Regular';
-$sans-bm:'BentonSans Medium';
-$sans-bl:'BentonSans Light';
-$sans-be:'BentonSans ExtraLight';
-
+$logo: 'Geraldine';
 
 // GOOGLE FONTS
 $sans-t: 'Tenor Sans', sans-serif; // KUL!
