@@ -1,8 +1,11 @@
 .main {
-    background: palevioletred;
+    // background: palevioletred;
+    background: $alfa-bg;
     grid-area: main;
+
+    padding: 6rem 3rem;;
+    text-align: center;
 
     // grid-column: center-start / center-end;
     // grid-row: 4/5;
-    
 }

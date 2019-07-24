@@ -6,7 +6,7 @@ svg {
     transition: all .2s ease-in-out;
     &:hover {
         fill: $lgold;
-        transform: translateY(-.2rem);
+        // transform: translateY(-.2rem);
     }
 }
 ul { list-style-type: none; }
@@ -15,6 +15,7 @@ a { text-decoration: none; color: inherit; }
 .txt-img-color {
     // background-image: ;
     -webkit-background-clip: text;
+    -moz-background-clip: text;
     background-clip: text;
     color: transparent;
 }

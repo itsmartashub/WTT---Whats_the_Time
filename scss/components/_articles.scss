@@ -1,0 +1,145 @@
+.main__articles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    justify-content: center;
+    justify-items: center;
+    grid-gap: 4rem;
+    padding: 7rem 0;
+    // background: lightskyblue;
+
+
+    .article {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+
+        // grid-template-rows: 30vh min-content;
+        // background: orangered;
+        
+        border-radius: .4rem;
+        box-shadow: $box-shadow-article;
+        border-bottom: .4rem solid $lgold-5;
+        transform: scale(1);
+        transition: transform .2s $cub-4, box-shadow .2s $cub-4;
+
+        &:hover {
+            transform: scale(1.04);
+            box-shadow: $box-shadow-item-img;
+            box-shadow: .5rem 2rem 3rem rgba($teget,0.2);
+        }
+        
+
+        &__img-container {
+            grid-column: 1/-1;
+            grid-row: 1/2;
+            z-index: 1;
+            background: $bg-color;
+            padding: 4rem 2rem;
+            width: 100%;
+            // height: 30vh;
+            // display: block; // ovo valjda znaci kad ima onaj dole ispod slike i sl diva razmak, ali valjda treba da bude na img bas a ne parentu
+            background: $alfa-box-bg;
+            // background: $article-gradient;
+
+            img {
+                grid-column: 1/-1;
+                grid-row: 1/2;
+                height: 100%;
+                width: 100%;
+              
+                // display: block; // ovo valjda znaci kad ima onaj dole ispod slike i sl diva razmak, ali valjda treba da bude na img bas a ne parentu
+                // object-fit: cover; 
+                
+            }
+        }
+
+        &__heart {
+            grid-column: 4/-1;
+            grid-row: 1/2;
+            justify-self: end;
+            margin: 1.5rem;
+            padding: .2rem;
+            z-index: 2;
+        }
+
+        &__caption {
+            grid-column: 1/4;
+            grid-row: 2/3;
+            padding: 1rem .5rem;
+            // background-color: rgba($lgold, .4);
+            background: $lgold-gradient;
+            // background: $gold;
+            position: relative;
+        }
+
+        &__title, &__price {
+            font-size: 2rem;
+            font-family: $arsenal;
+            font-weight: 300;
+            display: inline-block;
+            // letter-spacing: .2rem;
+        }
+
+        hr {
+            background: rgba($lgold, .5);
+            width: 10%;
+            margin: 0 auto;
+            height: .2rem;
+            border: none;
+        }
+
+        &__brand {
+            color: rgba($lgold, 1);
+        }
+
+        &__price {
+            font-size: 1.7rem;
+            font-weight: bold;
+        }
+
+        
+        &__bag {
+            grid-column: 4/5;
+            grid-row: 2/3;
+            // background: $teget;
+            background: $teget-gradient;
+            // background: $like-light;
+            // background: $like-gradient;
+            // padding: 0 .5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            &:hover {
+                background: $lgold-5;
+                // background: $lgold-gradient;
+                // background: $teget;
+                // @extend .transition-3;
+                // z-index: 555; // ovo je kad bude klik
+                // grid-column: 1/5; // ovo je kad bude klik
+                svg {
+                //    transform: translateY(0) scale(1);
+                fill: $teget;
+                }
+            }
+            // &:active {
+            //     // background: transparent;
+            //     svg { transform: translateY(0) scale(.9) rotate(180deg); }
+            // }
+        }
+        // &__buy {
+            
+        // }
+        svg {
+            fill: $lgold;
+            // transform: translateY(0);
+            transition: fill .2s;
+            
+        }
+
+        &__heart {
+            // fill: transparent;
+            // stroke: $lgold;
+            // // stroke-width: 10px
+        }
+    }
+}

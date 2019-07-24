@@ -5,7 +5,7 @@
     // grid-template-rows: repeat(4, 1fr);
 
     position: relative;
-    height: 90vh;
+    // height: 90vh;
     color: #fff;
     display: flex;
     justify-content: center;
@@ -69,9 +69,19 @@
         // text-shadow: 0 10rem 10rem rgba(#000, .8);
     }
 
+    
+    // @supports not(-moz-background-clip: text) {
+
+    //     .header__subtitle {
+    //         color: lighten($teget, 60%);
+    //     }
+    // }
+
     &__subtitle {
         @extend .txt-img-color;
         background-image: $teget-gradient;
+        // color: lighten($teget, 60%);
+        
         text-transform: uppercase;
         font-size: 4rem;
         font-weight: 500;
@@ -83,4 +93,6 @@
         // letter-spacing: .4rem;
         transform: translateY(-2rem);
     }
+
+    
 }

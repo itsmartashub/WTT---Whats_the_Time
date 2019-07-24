@@ -21,6 +21,7 @@
         position: relative;
         overflow: hidden;
         box-shadow: 0 .1rem .3rem rgba($teget, .3); /* x y blur color */
+        border-radius: .2rem;
 
         // box-shadow: $box-shadow-inset-black;
         @extend .transition-2;

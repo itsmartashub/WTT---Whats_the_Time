@@ -1,18 +1,39 @@
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
+   //  display: 
    }
    // @extend %h-default;
 // .h1 {
    
 // }
 
-// .h2 { // ideti u basinat
-
-// }   
+.h2 { // videti u basinat (#new)
+   font-size: 1.4rem;
+   display: inline-block;
+   padding: .5rem 1.5rem;
+   border-radius: .5rem;
+   color: $lgold;
+   background-color: rgba($lgold, .4); 
+}   
 
 .h3 { // title
-   font-size: 1.6;
-//    color: 
+   font-size: 2rem;
+   font-family: $poppins;
+   display: inline-block;
+   letter-spacing: .2rem;
+   word-spacing: .5rem;
+   position: relative;
+
+   &::after {
+      content: '';
+      position: absolute;
+      width: 40%;
+      height: .3rem;
+      background-color: rgba($lgold, .4);
+      border-radius: .5rem;
+      left: 30%;
+      bottom: 0;
+   }
 }
 
 .h4 { // brand

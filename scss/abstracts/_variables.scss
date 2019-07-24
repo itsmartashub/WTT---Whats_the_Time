@@ -66,7 +66,7 @@ $dbl-2: #051931;
 $dbl-3: #243046;
 
 // $teget: #34303F;
-$teget: rgb(51, 44, 85);
+$teget: #332c55;
 $teget-1: #423C48;
 // $teget-gradient: linear-gradient(to bottom right rgba(#34303F, 1), rgba(#39325E, 1));
 $teget-gradient: radial-gradient( circle farthest-corner at 0% 0.5%,  rgba(#34303F, 1) 0.1%, rgba(#39325E, 1) 100.2% ); 
@@ -116,8 +116,9 @@ $article-gradient3: radial-gradient( circle 571px at 51.4% 22.8%,  rgba(250,250,
 // $gold: #967140;
 
 // SHADOW
-$box-shadow-btn: 0 1rem 2rem rgba($darkblue-3, .2); 
+$box-shadow-btn: 0 1rem 2rem rgba($darkblue-3, .2); // 0 .1rem .3rem rgba($teget, .3);
 $box-shadow-item-img: 2px 5px 10px -4px rgba(0,0,0,0.5);
+$box-shadow-article: 0 .1rem .1rem rgba($teget, .3);
 
 $box-shadow-inset: inset 0 0 1.5rem 1rem rgba($c7, 0.5);
 $box-shadow-inset-blur: inset 1rem 1rem 12rem 1rem rgba($c7, 0.2), inset -1rem -1rem 12rem 1rem rgba($c7, 0.2);

@@ -11,17 +11,17 @@
     <!-- Moj css -->
     <link rel="stylesheet" href="css/style.css"/>
 
-    <title>WTT - What's the Time?</title>
+    <title>WTT - What&#39;s the Time&#63;</title>
 </head>
 <body class="grid-container">
 <!-- ==================== ASIDE SIDEBAR 1 ==================== -->
         <aside class="sidebar-1">
             <div class="side-container">
                 <div class="sidebar-1__copy">
-                    &copy; 2019 code by <a href="#">bires marta</a>
+                    <span class="sidebar-1__span-copy">&copy;</span> &mdash; 2019. coding by <a href="#">bires marta</a> &mdash; 
                 </div>
                 
-                <div class="sidebar-1__after side-after">someeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee</div>
+                <div class="sidebar-1__after side-after"><span class="side-after__span-1">&nbsp;</span><span class="side-after__span-2">&nbsp;</span></div>
             </div>
 
             <!-- <div class="side-after">&nbsp;</div> -->
@@ -32,10 +32,13 @@
         <aside class="sidebar-2">
             <div class="side-container">
                 <div class="sidebar-2__free-ship">
-                       free worldwide shipping over $299
+                        <svg class="icon">
+                            <use xlink:href="img/sprite.svg#free-delivery"></use>
+                        </svg>
+                        &mdash;  free worldwide shipping over $299 &mdash; 
                 </div>
 
-                <div class="sidebar-2__after side-after">someeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee</div>
+                <div class="sidebar-2__after side-after"><span class="side-after__span-1">&nbsp;</span><span class="side-after__span-2">&nbsp;</span></div>
             </div>
             
 
@@ -49,7 +52,7 @@
                 <input type="checkbox" id="nav-toggle" class="chb-toggle hide" />
 
                 <label for="nav-toggle" class="hamburger__btn">
-                    <span class="hamburger__icon">&nbsp;</span>
+                    <span class="hamburger__icon"></span>
                 </label>
 
                 <nav class="hamburger__nav">
@@ -87,7 +90,7 @@
 
             <div class="menu__logo logo">
                 <a href="index.html">
-                    <span class="zvrlj">What's the Time</span>
+                    <span class="zvrlj">What&#39;s the Time&#63;</span>
                     <span class="border-bottom">&nbsp;</span>
                     <span class="wtt">-W-T-T-</span>
                     <!-- <i class="logo__kais">=</i>
@@ -312,15 +315,157 @@
 
 
 <!-- ==================== SECTION REFUND ==================== -->
-        <section class="refund">
-            REFUND
+        <section class="features">
+            <div class="features__refund feature">
+                <svg class="icon">
+                        <linearGradient id="my-cool-gradient" >
+                            <stop offset="0%" stop-color="var(--color-stop-1)" />
+                            <stop offset="30%" stop-color="var(--color-stop-2)" />
+                            <stop offset="100%" stop-color="var(--color-stop-3)" />
+                        </linearGradient>
+                    <use xlink:href="img/sprite.svg#refund"></use>
+                    
+                </svg>
+                <p>refund warranty</p>
+            </div>
+
+            <div class="features__gift feature">
+                <svg class="icon">
+                    <use xlink:href="img/sprite.svg#gift"></use>
+                </svg>
+                <p>free gift packing</p>
+            </div>
+
+            <div class="features__return feature">
+                <svg class="icon">
+                    <use xlink:href="img/sprite.svg#return-box"></use>
+                </svg>
+                <p>30 days return policy</p>
+            </div>
+
+            <div class="features__secure feature">
+                <svg class="icon">
+                    <use xlink:href="img/sprite.svg#shield"></use>
+                </svg>
+                <p>secure shop</p>
+            </div>
         </section>
 <!-- ==================== END SECTION REFUND ==================== -->
 
 
 <!-- ==================== MAIN ==================== -->
         <main class="main">
-            MAIN
+            <h2 class="h2 mb-2">#NEW</h2><br/>
+            <h3 class="h3">latest models</h3>
+
+            <div class="main__articles">
+                <article class="article">
+                    <div class="article__img-container">
+                        <img src="./img/products/015.png" alt=""/>
+                    </div>
+
+                    <svg class="article__heart">
+                        <use xlink:href="img/sprite.svg#heart"></use>
+                    </svg>
+
+                    <!-- <div class="article__buy"> -->
+                        <div class="article__caption">
+                            <h2 class="article__title">titletitletitletitlesss</h2> <!-- class="h3" -->
+                            <h3 class="article__brand h4">rolex</h3> <!-- class="h4" -->
+                            <hr/>
+                            <h4 class="article__price">$300.99</h4> <!-- class="h3" -->
+                        </div>
+                        <div class="article__bag">
+                            <svg class="article__shopping-bag">
+                                <use xlink:href="img/sprite.svg#shopping-bag"></use>
+                            </svg>
+                        </div>
+                    <!-- </div> -->
+
+                </article>
+
+
+
+                <article class="article">
+                    <div class="article__img-container">
+                        <img src="./img/products/020.png" alt=""/>
+                    </div>
+
+                    <svg class="article__heart">
+                        <use xlink:href="img/sprite.svg#heart"></use>
+                    </svg>
+
+                    <!-- <div class="article__buy"> -->
+                        <div class="article__caption">
+                            <h2 class="article__title">title</h2>
+                            <h3 class="article__brand h4">rolex</h3> <!-- class="h4" -->
+                            <hr/>
+                            <h4 class="article__price">$300.99</h4> <!-- class="h3" -->
+                        </div>
+                        <div class="article__bag">
+                            <svg class="article__shopping-bag">
+                                <use xlink:href="img/sprite.svg#shopping-bag"></use>
+                            </svg>
+                        </div>
+                    <!-- </div> -->
+
+                </article>
+
+
+                <article class="article">
+                    <div class="article__img-container">
+                        <img src="./img/products/017.png" alt=""/>
+                    </div>
+
+                    <svg class="article__heart">
+                        <use xlink:href="img/sprite.svg#heart"></use>
+                    </svg>
+
+                    <!-- <div class="article__buy"> -->
+                        <div class="article__caption">
+                            <h2 class="article__title">title</h2>
+                            <h3 class="article__brand h4">rolex</h3> <!-- class="h4" -->
+                            <hr/>
+                            <h4 class="article__price">$300.99</h4> <!-- class="h3" -->
+                        </div>
+                        <div class="article__bag">
+                            <svg class="article__shopping-bag">
+                                <use xlink:href="img/sprite.svg#shopping-bag"></use>
+                            </svg>
+                        </div>
+                    <!-- </div> -->
+
+                </article>
+
+
+                <article class="article">
+                    <div class="article__img-container">
+                        <img src="./img/products/022.png" alt=""/>
+                    </div>
+
+                    <svg class="article__heart">
+                        <use xlink:href="img/sprite.svg#heart"></use>
+                    </svg>
+
+                    <!-- <div class="article__buy"> -->
+                        <div class="article__caption">
+                            <h2 class="article__title">title</h2>
+                            <h3 class="article__brand h4">rolex</h3> <!-- class="h4" -->
+                            <hr/>
+                            <h4 class="article__price">$300.99</h4> <!-- class="h3" -->
+                        </div>
+                        <div class="article__bag">
+                            <svg class="article__shopping-bag">
+                                <use xlink:href="img/sprite.svg#shopping-bag"></use>
+                            </svg>
+                        </div>
+                    <!-- </div> -->
+
+                </article>
+ 
+            </div>
+
+            <button class="btn"><span>All watches</span><em></em></button>
         </main>
 <!-- ==================== END MAIN ==================== -->
 

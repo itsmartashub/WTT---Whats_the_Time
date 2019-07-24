@@ -7,11 +7,9 @@
     @extend .nav-bag-same;
     right: 6vw;
     padding: 3vh 0;
-    // transform: translateX(200%);
+    transform: translateX(200%);
     text-align: center;
     
-
-
 
     &__content {
         max-height: 50vh;
