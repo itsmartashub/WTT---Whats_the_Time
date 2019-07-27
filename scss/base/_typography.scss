@@ -23,16 +23,20 @@ h1, h2, h3, h4, h5, h6 {
    letter-spacing: .2rem;
    word-spacing: .5rem;
    position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 
    &::after {
       content: '';
       position: absolute;
-      width: 40%;
-      height: .3rem;
+      width: .2rem;
+      height: 4.5rem;
       background-color: rgba($lgold, .4);
       border-radius: .5rem;
-      left: 30%;
-      bottom: 0;
+      // left: 30%;
+      // text-align: center;
+      top: 140%;
    }
 }
 
@@ -56,3 +60,7 @@ h1, h2, h3, h4, h5, h6 {
    font-size: 2rem;
    // font-family: $poppins;
 }
+
+// .h7 {
+
+// }

@@ -1,10 +1,10 @@
 .main__articles {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     justify-content: center;
     justify-items: center;
-    grid-gap: 4rem;
-    padding: 7rem 0;
+    grid-gap: 6rem 10rem;
+    padding: 10rem 0;
     // background: lightskyblue;
 
 
@@ -15,6 +15,7 @@
         // grid-template-rows: 30vh min-content;
         // background: orangered;
         
+        background: $lgold-5;
         border-radius: .4rem;
         box-shadow: $box-shadow-article;
         border-bottom: .4rem solid $lgold-5;
@@ -45,6 +46,7 @@
                 grid-row: 1/2;
                 height: 100%;
                 width: 100%;
+                filter: drop-shadow(0px 1px 2px rgba(#000, .5));
               
                 // display: block; // ovo valjda znaci kad ima onaj dole ispod slike i sl diva razmak, ali valjda treba da bude na img bas a ne parentu
                 // object-fit: cover; 

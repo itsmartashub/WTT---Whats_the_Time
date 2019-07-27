@@ -18,12 +18,24 @@
     margin-bottom: 5rem;
 }
 
+.mb-6 {
+    margin-bottom: 6rem;
+}
+
+.mb-7 {
+    margin-bottom: 7rem;
+}
+
 .txt-center {
     text-align: center;
 }
 
-.show {
+.show-block {
     display: block;
+}
+
+.show-flex {
+    display: flex;
 }
 
 .hide {

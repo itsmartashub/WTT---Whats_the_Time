@@ -1,0 +1,63 @@
+.brands {
+    grid-area: brands;
+    padding: 6rem 0;
+    // padding-bottom: 10rem;
+
+    // display: grid;
+    // grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    // justify-content: center;
+    // justify-items: center;
+    // grid-gap: 3vw;
+
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    
+
+    img {
+        // width: 15rem;
+        // height: 8rem;
+        margin: 1rem;
+        // padding: 2rem;
+        filter: drop-shadow(1px 1px 2px gray);
+        opacity: .7;
+        @extend .transition-2;
+
+        &:hover {
+            opacity: .9;
+        }
+
+        // background: lemonchiffon;
+    } 
+    
+    &__pontier { // 100x64
+        width: 10rem;
+        height: 6.4rem;
+    }
+
+    &__dw { // 800x343
+        // width: 20rem;
+        // height: 8.6rem;
+        width: 10rem;
+        height: 5.43rem;
+    }
+
+    &__georg { // 640x400
+        // width: 21.3rem;
+        // height: 13.3rem;
+        width: 13.4rem;
+        height: 10rem;
+        
+    }
+
+    &__rolex { // 1490x780
+        width: 12.9rem;
+        height: 5.8rem;
+    }
+
+    &__apple { // 1280x282
+        width: 12.8rem;
+        height: 2.82rem;
+    }
+}

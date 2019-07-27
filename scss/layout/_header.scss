@@ -63,6 +63,8 @@
         background-image: $lgold-gradient;
         font-family: $logo;
         font-size: 20rem;
+        text-shadow: .1rem .2rem .1rem rgba(#000, .2);
+
         // z-index: 55;
         // font-family: $logo;
         // font-size: 20rem;
@@ -78,15 +80,17 @@
     // }
 
     &__subtitle {
-        @extend .txt-img-color;
-        background-image: $teget-gradient;
+        // @extend .txt-img-color;
+        // background-image: $teget-gradient;
         // color: lighten($teget, 60%);
+        color: $teget;
         
         text-transform: uppercase;
         font-size: 4rem;
         font-weight: 500;
         font-family: $arsenal; // arsenal nije los, sans-t
-        letter-spacing: .4rem;
+        letter-spacing: .5rem;
+        text-shadow: .1rem .2rem .1rem rgba(#000, .2);
                 // font-size: 4rem;
         // font-weight: 500;
         // font-family: $arsenal; // arsenal nije los, sans-t

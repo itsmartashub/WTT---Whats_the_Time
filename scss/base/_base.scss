@@ -23,6 +23,7 @@ body {
     font-size: 1.5rem;
     color: $teget;
     background: $bg-color; // $alfa-bg
+    position: relative;
 }
 
 body::-webkit-scrollbar { 
@@ -61,7 +62,7 @@ body::-webkit-resizer {
 
 .grid-container {
     display: grid;
-    grid-template-rows: min-content 90vh min-content min-content 20vw min-content;
+    grid-template-rows: min-content 90vh repeat(5, min-content);
     // grid-template-columns: [side1-start] 6vw [side1-end center-start] repeat(4, [col-center] minmax(min-content, 1fr) [col-end]) [center-end side2-start] 6vw [side2-end]; // 14rem je jer je taj centralni deo izmedju ova dva sidebara od 5vw 1200 ili 1140/4 = 285px po koloni iliti oko 28rem
     grid-template-columns: 6vw repeat(4, minmax(min-content, 1fr)) 6vw; // 14rem je jer je taj centralni deo izmedju ova dva sidebara od 5vw 1200 ili 1140/4 = 285px po koloni iliti oko 28rem
     grid-template-areas: 
@@ -70,5 +71,6 @@ body::-webkit-resizer {
         "side1 features features features features side2"
         "side1 main main main main side2"
         "side1 subs subs subs subs side2"
+        "side1 brands brands brands brands side2"
         "side1 footer footer footer footer side2";
 }

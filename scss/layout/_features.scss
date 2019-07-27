@@ -3,9 +3,10 @@
     grid-area: features;
 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    justify-content: center;
-    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, max-content));
+    justify-content: space-evenly;
+    justify-items: start;
+    // grid-gap: 2rem;
     // grid-row-gap: 1rem;
     // grid-column: center-start / center-end;
     // grid-row: 3/4;
@@ -14,9 +15,11 @@
         display: grid;
         grid-template-columns: repeat(2, auto);
         grid-gap: 2rem;
+        justify-content: center;
         align-items: center;
+        padding: 1.5vh;
+        // justify-items: start;
         // background: lightcoral;
-        padding: 1.5vh 0;
 
         #my-cool-gradient {
             // $lgold-4: #9C714E;

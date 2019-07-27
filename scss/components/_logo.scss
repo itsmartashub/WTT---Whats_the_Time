@@ -21,8 +21,9 @@
         // font-weight: normal;
     }
     .wtt {
-        background-image: $lgold-gradient;
-        @extend .txt-img-color;
+        // background-image: $lgold-gradient;
+        // @extend .txt-img-color;
+        
         font-weight: bold;
         letter-spacing: -.3rem;
         transform: translateY(-2.5rem);
