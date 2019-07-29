@@ -38,11 +38,24 @@ a { text-decoration: none; color: inherit; }
 .nav-bag-same {
     background: $bg-color;
     min-width: 35vw;
-    height: 90vh;
+    height: 100vh;
     position: fixed;
-    top: 9.2rem;
-    z-index: 3;
+    top: 7rem;
+    z-index: 56;
+    padding-top: 20rem;
     @extend .transition-5;
+
+    @include device(tab-land) {
+        min-width: 50vw;
+    }
+
+    @include device(tab-port) {
+        min-width: 70vw;
+    }
+
+    @include device(phone) {
+        min-width: 100vw;
+    }
 }
 
 .cross-line { // za &::before

@@ -3,15 +3,23 @@
     // font-size: 2rem;
     font-weight: 300;
     font-family: $raleway;
+    // display: flex;
+    // align-items: center;
+    z-index: 58;
+    
+
+
     &:hover {
-        // background-image: ;
+        color: $lgold;
     }
 
     a {
-        display: grid;
-        grid-template-rows: repeat(3, min-content);
-        justify-items: center;
-        // background: grey;
+        display: flex;
+        flex-direction: column;
+        // grid-template-rows: repeat(2, min-content);
+        // justify-items: start;
+        align-items: center;
+        // padding-top: 1.5rem;
     }
 
     .zvrlj {
@@ -26,14 +34,17 @@
         
         font-weight: bold;
         letter-spacing: -.3rem;
-        transform: translateY(-2.5rem);
+        // transform: translateY(-2.5rem);
+        margin-top: -2.6rem;
+        font-family: $sans-t;
     }
 
     .border-bottom {
         width: 70%;
         height: .1rem;
         background: currentColor;
-        transform: translateY(-3rem);
+        // margin-top: -3rem;
+        transform: translateY(-2.8rem);
         opacity: .5;
 
     }

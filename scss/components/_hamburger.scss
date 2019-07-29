@@ -7,6 +7,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        
 
         &:hover {
             .hamburger__icon {
@@ -25,6 +26,7 @@
         position: relative;
         border-radius: 2px;
         @extend .transition-5;
+        z-index: 60;
         
         &, &::after, &::before {
             content: '';
@@ -55,6 +57,7 @@
         // position: fixed;
         // top: 9.2rem;
         @extend .nav-bag-same;
+        z-index: 57;
         padding: 0 0 0 3vw;
         transform: translateX(-200%);
         display: grid;
@@ -62,11 +65,21 @@
         grid-row-gap: 1.8vh;
         // @extend .transition-5;
 
+        @include device(tab-land) {
+            left: 0;
+        }
+
+        @include device(tab-port) {
+            text-align: center;
+        }
+
         &-list {    
             display: grid;
             grid-row-gap: 2vh;
             font-size: 3.5rem;
             padding: 18vh 0;
+
+            
         }
 
         &-link {

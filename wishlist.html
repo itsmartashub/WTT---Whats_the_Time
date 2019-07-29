@@ -5,15 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <!-- FontAwesome JS -->
-    <script src="https://kit.fontawesome.com/4177917276.js"></script>
-    <!-- <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/> -->
+    <!-- <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon"/> -->
     <!-- Moj css -->
-    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="./css/style.css"/>
 
     <title>WTT - What&#39;s the Time&#63;</title>
 </head>
-<body class="grid-container">
+<body class="grid-container grid-container-signin">
 <!-- --------------------------- ASIDE SIDEBAR 1 --------------------------- -->
         <aside class="sidebar-1">
             <div class="side-container">
@@ -33,7 +31,7 @@
             <div class="side-container">
                 <div class="sidebar-2__free-ship">
                         <svg class="icon">
-                            <use xlink:href="img/sprite.svg#free-delivery"></use>
+                            <use xlink:href="./img/sprite.svg#free-delivery"></use>
                         </svg>
                         &mdash;  free worldwide shipping over $299 &mdash; 
                 </div>
@@ -72,15 +70,15 @@
 
                     <div class="hamburger__nav-social">
                         <svg class="hamburger__nav-fb">
-                            <use xlink:href="img/sprite.svg#facebook"></use>
+                            <use xlink:href="./img/sprite.svg#facebook"></use>
                         </svg>
         
                         <svg class="hamburger__nav-ig">
-                            <use xlink:href="img/sprite.svg#instagram"></use>
+                            <use xlink:href="./img/sprite.svg#instagram"></use>
                         </svg>
         
                         <svg class="hamburger__nav-pint">
-                            <use xlink:href="img/sprite.svg#pinterest"></use>
+                            <use xlink:href="./img/sprite.svg#pinterest"></use>
                         </svg>
                     </div>
                 </nav>
@@ -101,21 +99,21 @@
 
             <div class="menu__items">
                 <svg class="menu__search">
-                    <use xlink:href="img/sprite.svg#magnifying-glass"></use>
+                    <use xlink:href="./img/sprite.svg#magnifying-glass"></use>
                 </svg>
 
                 <svg class="menu__user">
-                    <use xlink:href="img/sprite.svg#user"></use>
+                    <use xlink:href="./img/sprite.svg#user"></use>
                 </svg>
 
                 <svg class="menu__wishlist">
-                    <use xlink:href="img/sprite.svg#heart"></use>
+                    <use xlink:href="./img/sprite.svg#heart"></use>
                 </svg>
 
                 <div class="menu__bag">
                     <span class="menu__bag--counter">12</span>
                     <svg class="menu__shopping-bag">
-                        <use xlink:href="img/sprite.svg#shopping-bag"></use>
+                        <use xlink:href="./img/sprite.svg#shopping-bag"></use>
                     </svg>
                 </div>
 
@@ -302,211 +300,128 @@
 <!-- --------------------------- END SECTION MENU --------------------------- -->
 
 
-<!-- --------------------------- HEADER --------------------------- -->
-        <header class="header">
-            <div class="header__bg"></div>
-            <div class="header__caption">
-                <div class="header__blur"></div>
-                <h1 class="header__title txt-center">What's the Time?</h1>
-                <h2 class="header__subtitle txt-center">It's time for the new Watch</h2>
-            </div>
-        </header>
-<!-- --------------------------- END HEADER --------------------------- -->
 
-
-<!-- --------------------------- SECTION REFUND --------------------------- -->
-        <section class="features">
-            <div class="features__refund feature">
-                <svg class="icon">
-                        <linearGradient id="my-cool-gradient" >
-                            <stop offset="0%" stop-color="var(--color-stop-1)" />
-                            <stop offset="30%" stop-color="var(--color-stop-2)" />
-                            <stop offset="100%" stop-color="var(--color-stop-3)" />
-                        </linearGradient>
-                    <use xlink:href="img/sprite.svg#refund"></use>
-                    
-                </svg>
-                <p>refund warranty</p>
-            </div>
-
-            <div class="features__gift feature">
-                <svg class="icon">
-                    <use xlink:href="img/sprite.svg#gift"></use>
-                </svg>
-                <p>free gift packing</p>
-            </div>
-
-            <div class="features__return feature">
-                <svg class="icon">
-                    <use xlink:href="img/sprite.svg#return-box"></use>
-                </svg>
-                <p>30 days return policy</p>
-            </div>
-
-            <div class="features__secure feature">
-                <svg class="icon">
-                    <use xlink:href="img/sprite.svg#shield"></use>
-                </svg>
-                <p>secure shop</p>
-            </div>
-        </section>
-<!-- --------------------------- END SECTION REFUND --------------------------- -->
 
 
 <!-- --------------------------- MAIN --------------------------- -->
-        <main class="main">
-            <h2 class="h2 mb-2">#NEW</h2><br/>
-            <h3 class="h3">latest models</h3>
+        <main class="main sign">
+            <h2 class="h2 mb-2">ACCOUNT</h2><br/>
+            <h3 class="h3 mb-8">connect with us</h3>
 
-            <div class="main__articles">
-                <article class="article">
-                    <div class="article__img-container">
-                        <img src="./img/products/015.png" alt=""/>
+            <div class="sign__container">
+                <div class="sign__left">
+                    <!-- OVDE NEKI SVG -->
+                    <svg class="icon">
+                        <use xlink:href="./img/sprite.svg#login_signup"></use>
+                    </svg>
+                    <p>be part of our awesome team and have fun with us</p>
+                    <!-- I OVDE NEKI SVG -->
+                    <svg class="icon">
+                        <use xlink:href="./img/sprite.svg#signup"></use>
+                    </svg>
+                </div>
+
+
+                <div class="sign__right">
+                    <div class="sign__tabs">
+                        <div class="sign__tab-signin current-tab" id="tab-1">sign in</div>
+                        <div class="sign__tab-signup" id="tab-2">sign up</div>
                     </div>
 
-                    <svg class="article__heart">
-                        <use xlink:href="img/sprite.svg#heart"></use>
-                    </svg>
+                    <!-- SIGN IN -->
+                    <div class="sign__signin show" id="tab-1-content">
+                        <form action="#" class="form">
+                            <div class="form__group">
+                                <svg class="icon">
+                                    <use xlink:href="./img/sprite.svg#form-email"></use>
+                                </svg>
+                                <input type="email" id="email" class="form__input" placeholder="Enter your e-mail address"/>
+                                <label for="email" class="form__label">e-mail</label>
+                            </div>
 
-                    <!-- <div class="article__buy"> -->
-                        <div class="article__caption">
-                            <h2 class="article__title">titletitletitletitlesss</h2> <!-- class="h3" -->
-                            <h3 class="article__brand h4">rolex</h3> <!-- class="h4" -->
-                            <hr/>
-                            <h4 class="article__price">$300.99</h4> <!-- class="h3" -->
-                        </div>
-                        <div class="article__bag">
-                            <svg class="article__shopping-bag">
-                                <use xlink:href="img/sprite.svg#shopping-bag"></use>
-                            </svg>
-                        </div>
-                    <!-- </div> -->
-
-                </article>
-
-
-
-                <article class="article">
-                    <div class="article__img-container">
-                        <img src="./img/products/020.png" alt=""/>
-                    </div>
-
-                    <svg class="article__heart">
-                        <use xlink:href="img/sprite.svg#heart"></use>
-                    </svg>
-
-                    <!-- <div class="article__buy"> -->
-                        <div class="article__caption">
-                            <h2 class="article__title">title</h2>
-                            <h3 class="article__brand h4">rolex</h3> <!-- class="h4" -->
-                            <hr/>
-                            <h4 class="article__price">$300.99</h4> <!-- class="h3" -->
-                        </div>
-                        <div class="article__bag">
-                            <svg class="article__shopping-bag">
-                                <use xlink:href="img/sprite.svg#shopping-bag"></use>
-                            </svg>
-                        </div>
-                    <!-- </div> -->
-
-                </article>
-
-
-                <article class="article">
-                    <div class="article__img-container">
-                        <img src="./img/products/017.png" alt=""/>
-                    </div>
-
-                    <svg class="article__heart">
-                        <use xlink:href="img/sprite.svg#heart"></use>
-                    </svg>
-
-                    <!-- <div class="article__buy"> -->
-                        <div class="article__caption">
-                            <h2 class="article__title">title</h2>
-                            <h3 class="article__brand h4">rolex</h3> <!-- class="h4" -->
-                            <hr/>
-                            <h4 class="article__price">$300.99</h4> <!-- class="h3" -->
-                        </div>
-                        <div class="article__bag">
-                            <svg class="article__shopping-bag">
-                                <use xlink:href="img/sprite.svg#shopping-bag"></use>
-                            </svg>
-                        </div>
-                    <!-- </div> -->
-
-                </article>
-
-
-                <article class="article">
-                    <div class="article__img-container">
-                        <img src="./img/products/022.png" alt=""/>
-                    </div>
-
-                    <svg class="article__heart">
-                        <use xlink:href="img/sprite.svg#heart"></use>
-                    </svg>
-
-                    <!-- <div class="article__buy"> -->
-                        <div class="article__caption">
-                            <h2 class="article__title">title</h2>
-                            <h3 class="article__brand h4">rolex</h3> <!-- class="h4" -->
-                            <hr/>
-                            <h4 class="article__price">$300.99</h4> <!-- class="h3" -->
-                        </div>
-                        <div class="article__bag">
-                            <svg class="article__shopping-bag">
-                                <use xlink:href="img/sprite.svg#shopping-bag"></use>
-                            </svg>
-                        </div>
-                    <!-- </div> -->
-
-                </article>
- 
-            </div>
-
-            <button class="btn"><span>All watches</span><em></em></button>
-        </main>
-<!-- --------------------------- END MAIN --------------------------- -->
-
-
-<!-- --------------------------- SECTION SUBSCRIBE --------------------------- -->
-        <section class="subscribe">
-                    
-
-            <!-- <div class="subscribe__grid"> -->
-                    <div class="subscribe__photo-container"></div>
-
-                    <div class="subscribe__form">
-                            <h2 class="h2 mb-2">ENTER TO WIN A</h2><br/>
-                            <h3 class="h3 mb-7">$200 gift card</h3>
-                        <p class="subscribe__description mb-2">Get <span class="subscribe__wtt">-W-T-T-</span> news + be automatically entered to win an <span class="subscribe__wtt">-W-T-T-</span> Gift Card <br/> (new winner every month)</p>
-                        <form action="#">
-                            <input type="email" class="subscribe__email mb-1" placeholder="enter your email"/>
-                            <p class="subscribe__agree mb-3">by entering you agree to receive emails from <span class="subscribe__wtt">-W-T-T-</span></p>
-                            <button class="btn"><span>enter to win</span><em></em></button>
+                            <div class="form__group">
+                                <svg class="icon">
+                                    <use xlink:href="./img/sprite.svg#form-password"></use>
+                                </svg>
+                                <input type="password" id="password-signin" class="form__input" placeholder="Enter your password"/>
+                                <label for="password-signin" class="form__label">password</label>
+                            </div>
+                            
+                            <div class="form__group"> <!-- u FORM-i potreban nam je pravo dugme, ne mozemo koristiti link, tj <a></a> -->
+                                <button class="btn"><span>log in</span><em></em></button>
+                            </div>
                         </form>
                     </div>
 
-                    <div class="subscribe__entered-email hide">
-                        <p>
-                            <svg class="icon">
-                                <linearGradient id="svg-teget-gradient" >
-                                    <stop offset="0%" stop-color="#423C48" />
-                                    <!-- <stop offset="50%" stop-color="#B28159" /> -->
-                                    <stop offset="100%" stop-color="#836146" />
-                                </linearGradient>
-                                <use xlink:href="img/sprite.svg#gift"></use>
-                            </svg> <br/>
-                            Thank You for the subscibing. <br/>
-                            You are entered to win and Gift Card. <br/> 
-                            <span>GOOD LUCK!</span>
-                        </p>
-                        
+
+
+                    <!-- SIGN UP -->
+                    <div class="sign__signup" id="tab-2-content">
+                        <form action="#" class="form">
+                            <div class="form__group">
+                                <svg class="icon">
+                                    <use xlink:href="./img/sprite.svg#form-fullname"></use>
+                                </svg>
+                                <input type="text" class="form__input" id="fullname" placeholder="Enter your full name" />
+                                <label for="fullname" class="form__label">full name</label>
+                            </div>
+
+                            <div class="form__group">
+                                <svg class="icon">
+                                    <use xlink:href="./img/sprite.svg#form-email"></use>
+                                </svg>
+                                <input type="email" id="email" class="form__input" placeholder="Enter your e-mail address"/>
+                                <label for="email" class="form__label">e-mail</label>
+                            </div>
+
+                            <div class="form__group">
+                                <svg class="icon">
+                                    <use xlink:href="./img/sprite.svg#form-password"></use>
+                                </svg>
+                                <input type="password" id="password-signup" class="form__input" placeholder="Enter your password"/>
+                                <!-- <svg class="icon" class="svg-form-eye">
+                                    <use xlink:href="./img/sprite.svg#form-eye"></use>
+                                </svg> -->
+                                <label for="password-signup" class="form__label">password</label>
+                            </div>
+
+                            <div class="form__group">
+                                <svg class="icon">
+                                    <use xlink:href="./img/sprite.svg#airplane"></use>
+                                </svg>
+                                <select name="" id="ddl-countries" class="form__ddl">
+                                    <option value="0">select country</option>
+                                    <option value="1">select country</option>
+                                    <option value="2">select country</option>
+                                    <option value="2">select country</option>
+                                    <option value="2">select country</option>
+                                    <option value="2">select country</option>
+                                    <option value="2">select country</option>
+                                    <option value="2">select country</option>
+                                    <option value="2">select country</option>
+                                </select>
+                                <label for="ddl-countries" class="form__label">country</label>
+                            </div>
+
+                            <div class="form__group">
+                                <label for="agree-terms" class="form__chb-label">
+                                    <input type="checkbox" id="agree-terms" class="form__chb-input" checked/>
+                                    <span class="form__chb-btn"></span>
+                                    By signing up you agree <span class="underline">&nbsp;Terms & Conditions</span>
+                                </label>
+                            </div>
+
+                            <div class="form__group">
+                                    <button class="btn"><span>sign up</span><em></em></button>
+                            </div>
+
+                        </form>
                     </div>
-            <!-- </div> -->
-        </section>
-<!-- --------------------------- END SECTION SUBSRIBE --------------------------- -->
+
+                </div>
+            </div>
+        </main>
+<!-- --------------------------- END MAIN --------------------------- -->
 
 
 
@@ -575,21 +490,21 @@
                     <li>
                         <a href="https://www.facebook.com/">
                             <svg>
-                                <use xlink:href="img/sprite.svg#facebook"></use>
+                                <use xlink:href="./img/sprite.svg#facebook"></use>
                             </svg>
                         </a>
                     </li>
                     <li>
                         <a href="https://www.instagram.com/">
                             <svg>
-                                <use xlink:href="img/sprite.svg#instagram"></use>
+                                <use xlink:href="./img/sprite.svg#instagram"></use>
                             </svg>
                         </a>
                     </li>
                     <li>
                         <a href="https://pinterest.com">
                             <svg>
-                                <use xlink:href="img/sprite.svg#pinterest"></use>
+                                <use xlink:href="./img/sprite.svg#pinterest"></use>
                             </svg>
                         </a>
                     </li>
@@ -598,7 +513,6 @@
 
         </footer>
 <!-- --------------------------- END FOOTER --------------------------- -->
-
 
 
 </body>

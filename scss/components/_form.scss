@@ -1,0 +1,149 @@
+.form {
+    // background: lightblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    // justify-items: center;
+    // display: grid;
+    // grid-row-gap: 2.5vh;
+    // justify-content: center;
+
+
+    &__group {
+        // background: lightcoral;
+        text-align: left;
+        width: 100%;
+
+        &:not(:last-child) {
+            margin-bottom: 2rem;
+        }
+
+        svg {
+            width: 1.8rem;
+            height: 1.8rem;
+            fill: $lgold;
+            transform: translateY(3.4rem);
+        }
+
+        // .svg-form-eye {
+        //     transform: translateY(3.4rem) translateX(100%);
+        // }
+    }
+
+    &__input, &__ddl {
+        padding: 1.2rem 0rem 1rem 3rem;
+        // font-family: inherit; // za placeholder font-family nije kao u citavom projektu vec browser stavlja svoj difoltni font-family, zato ovde stavljamo inherit, tj da nasledi font-family koji smo mi ranije stavili
+        color: inherit; // isto kao i za font-family
+        border: none;
+        border-bottom: .1rem solid rgba($bg-color, .5);
+        background: transparent;
+        display: inline-block;
+        width: 100%;
+        font-family: $poppins;
+        @extend .transition-2;
+
+        &:focus {
+            outline: none;
+            border-bottom: .15rem solid $lgold;
+
+            .form__label {
+                // display: block;
+                // transform: translateY(0);
+            }
+        }
+    }
+
+    &__label {
+        text-transform: uppercase;
+        font-size: 1rem;
+        // display: none;
+        display: block;
+        transition: all .3s;
+        transform: translateY(-6rem);
+        color: $lgold;
+    }
+
+    &__input:placeholder-shown ~ &__label { // zelimo da label bude sakriven, a ne input, dodajemo + tj sibling selector, dakle prvo selektujemo input pa potom sa sibling selektorom selektujemo prvi sibling sto je label. Da je izmedju inputa i labela bilo jos nekih divova tj elemenata, takodje bi mogl iselektovati label preko inputa, ali sa drugim selektorom ~ tilda. Da je label element u htmlu PRE inputa, nema sanse da bi mogli da ga selektujemo bilo kojim selektorom preko inputa
+        opacity: 0;
+        visibility: hidden; // zasto ne koristimo samo opacity? jer sa njim element je i dalje tu tj moze da se klikne na njega a da ne znamo, a sa visibility: hidden, ne. A zasto onda ne koristimo samo visibility? Jer njega ne mozemo da animiramo/transition, dok opacity mozemo! 
+        transform: translateY(0); // pogledaj kako izgleda ovaj efekat sa zakomentarisanim opacityjem i visibilityjem !
+    }
+
+    // &__ddl {
+    //     width: 100%;
+    // }
+
+    &__chb-input {
+        display: none;
+    }
+
+    &__chb-label {
+        display: flex;
+        align-items: center;
+        font-size: 1.1rem;
+        color: rgba(#fff, .5);
+
+        .underline {
+            border-bottom: .15rem solid $lgold;
+        }
+    }
+
+    &__chb-btn {
+        width: 2rem;
+        height: 2rem;
+        padding: 1rem;
+        background: $teget;
+        border-radius: .2rem;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1.2rem 1.2rem 1.2rem 0;
+        
+
+        &::after {
+            content: "";
+            position: absolute;
+            display: none;
+            width: .5rem;
+            height: 1rem;
+            border: solid white;
+            border-width: 0 .2rem .2rem 0;
+            // -webkit-transform: rotate(45deg);
+            // -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+    }
+
+    &__chb-input:checked ~ &__chb-btn {
+        content: '';
+        background: $lgold;
+    }
+
+    &__chb-input:checked ~ &__chb-btn::after{
+        display: block;
+        border-color: $teget;
+    }
+
+
+    &__ddl {
+        background: transparent;
+        option {
+            padding: 1.5rem 1rem;
+            background: $lgold;
+            color: $teget;
+            font-family: $poppins;
+
+            &:hover {
+                background: red;
+            }
+        }
+    }
+
+    &__group button {
+        margin: 0 auto;
+        display: block;
+    }
+}

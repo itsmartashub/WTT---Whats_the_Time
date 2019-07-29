@@ -11,6 +11,11 @@ aside {
         writing-mode: vertical-lr;
         font-family: $poppins; // poppins ili comforta
         // word-spacing: .2rem;
+
+        
+        @include device(tab-land) { // width < 1200 ?
+            display: none;
+        } 
     }
 
     .side-after {

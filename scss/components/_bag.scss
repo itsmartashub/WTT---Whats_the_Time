@@ -6,9 +6,13 @@
     // top: 9.2rem;
     @extend .nav-bag-same;
     right: 6vw;
-    padding: 3vh 0;
+    padding: 4vh 0;
     transform: translateX(200%);
     text-align: center;
+
+    @include device(tab-land) {
+        right: 0;
+    }
     
 
     &__content {
@@ -34,8 +38,8 @@
         display: grid;
         align-items: center;
         grid-template-columns: min-content max-content repeat(2, max-content);
-        grid-column-gap: 3vw;
-        justify-content: center;
+        grid-column-gap: 2vw;
+        justify-content: space-evenly;
         // justify-items: center;
         // margin: 1.5rem 0;
         // border-bottom: .1rem solid rgba($c7, .5);
