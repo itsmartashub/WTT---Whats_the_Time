@@ -13,7 +13,7 @@
 
     <title>WTT - What&#39;s the Time&#63;</title>
 </head>
-<body class="grid-container">
+<body class="grid-container grid-container-allwatches">
 <!-- --------------------------- ASIDE SIDEBAR 1 --------------------------- -->
         <aside class="sidebar-1">
             <div class="side-container">
@@ -68,7 +68,8 @@
                         United States, +1 212 123 4567
                     </p>
                     
-                    <b class="hamburger__nav-email">whatsthetime@wtt.com</b>
+                    <!-- <b class="hamburger__nav-email">whatsthetime@wtt.com</b> -->
+                    <a class="hamburger__nav-email" href="mailto:whatsthetime@wtt.com?subject=Mail from Our Site">whatsthetime@wtt.com</a>
 
                     <div class="hamburger__nav-social">
                         <svg class="hamburger__nav-fb">
@@ -303,209 +304,203 @@
 
 
 <!-- --------------------------- HEADER --------------------------- -->
-        <header class="header">
-            <div class="header__bg"></div>
-            <div class="header__caption">
-                <div class="header__blur"></div>
-                <h1 class="header__title txt-center">What's the Time?</h1>
-                <h2 class="header__subtitle txt-center">It's time for the new Watch</h2>
-            </div>
-        </header>
 <!-- --------------------------- END HEADER --------------------------- -->
 
 
 <!-- --------------------------- SECTION REFUND --------------------------- -->
-        <section class="features">
-            <div class="features__refund feature">
-                <svg class="icon">
-                        <linearGradient id="my-cool-gradient" >
-                            <stop offset="0%" stop-color="var(--color-stop-1)" />
-                            <stop offset="30%" stop-color="var(--color-stop-2)" />
-                            <stop offset="100%" stop-color="var(--color-stop-3)" />
-                        </linearGradient>
-                    <use xlink:href="img/sprite.svg#refund"></use>
-                    
-                </svg>
-                <p>refund warranty</p>
-            </div>
-
-            <div class="features__gift feature">
-                <svg class="icon">
-                    <use xlink:href="img/sprite.svg#gift"></use>
-                </svg>
-                <p>free gift packing</p>
-            </div>
-
-            <div class="features__return feature">
-                <svg class="icon">
-                    <use xlink:href="img/sprite.svg#return-box"></use>
-                </svg>
-                <p>30 days return policy</p>
-            </div>
-
-            <div class="features__secure feature">
-                <svg class="icon">
-                    <use xlink:href="img/sprite.svg#shield"></use>
-                </svg>
-                <p>secure shop</p>
-            </div>
-        </section>
 <!-- --------------------------- END SECTION REFUND --------------------------- -->
 
 
 <!-- --------------------------- MAIN --------------------------- -->
-        <main class="main">
-            <h2 class="h2 mb-2">#NEW</h2><br/>
-            <h3 class="h3">latest models</h3>
+        <main class="main" id="allwatches">
+            <h2 class="h2 mb-1">#ALLWATCHES</h2><br/>
+            <h3 class="h3 mb-8">all our products</h3>
 
-            <div class="main__articles">
-                <article class="article">
-                    <div class="article__img-container">
-                        <img src="./img/products/015.png" alt=""/>
-                    </div>
+            <div class="allwatches">
+                <div class="filtersort">
+                    <!-- <div class="filtersort__content" id="filtesort-content"> -->
+                        <figure class="filtersort__forher">
+                            <div class="filtersort__img-container">
+                                <img src="./img/she.jpg" alt="for her" class="filtersort__img"/>
+                            </div>
+                            <figcaption class="filtersort__caption">for her</figcaption>
+                        </figure>
+    
+                        <figure class="filtersort__forhim">
+                            <div class="filtersort__img-container">
+                                <img src="./img/he.jpg" alt="for him" class="filtersort__img">
+                            </div>
+                                <figcaption class="filtersort__caption">for him</figcaption>
+                        </figure>
+    
+                        <figure class="filtersort__analog">
+                            <div class="filtersort__img-container">
+                                <img src="./img/analog-clock.jpg" alt="analog watch" class="filtersort__img">
+                            </div>
+                                <figcaption class="filtersort__caption">analog</figcaption>
+                        </figure>
+    
+                        <figure class="filtersort__digital">
+                            <div class="filtersort__img-container">
+                                <img src="./img/digital-clock-1.jpg" alt="digital watch" class="filtersort__img">
+                            </div>
+                                <figcaption class="filtersort__caption">digital</figcaption>
+                        </figure>
+    
+                        <form action="#" class="form">
+                            <div class="form__group">
+                                <select id="" class="form__ddl btn-form">
+                                    <option value="0">price &nbsp; &nabla;</option>
+                                    <option value="lower">low to high</option>
+                                    <option value="higher">high to low</option>
+                                </select>
+                            </div>
 
-                    <svg class="article__heart">
-                        <use xlink:href="img/sprite.svg#heart"></use>
-                    </svg>
-
-                    <!-- <div class="article__buy"> -->
-                        <div class="article__caption">
-                            <h2 class="article__title">titletitletitletitlesss</h2> <!-- class="h3" -->
-                            <h3 class="article__brand h4">rolex</h3> <!-- class="h4" -->
-                            <hr/>
-                            <h4 class="article__price">$300.99</h4> <!-- class="h3" -->
-                        </div>
-                        <div class="article__bag">
-                            <svg class="article__shopping-bag">
-                                <use xlink:href="img/sprite.svg#shopping-bag"></use>
-                            </svg>
-                        </div>
+                            <a href="allwatches.html#allwatches" class="btn-form">all watches</a>
+                        </form>
                     <!-- </div> -->
+                    
+                    <!-- <input type="checkbox hide" id="chb-filtersort" />
+                    <label for="chb-filtersort" class="btn-filtersort">SHOW</label> -->
+                    <p class="filtersort__show-btn hide">SHOW</p>
+                </div>
 
-                </article>
-
-
-
-                <article class="article">
-                    <div class="article__img-container">
-                        <img src="./img/products/020.png" alt=""/>
-                    </div>
-
-                    <svg class="article__heart">
-                        <use xlink:href="img/sprite.svg#heart"></use>
-                    </svg>
-
-                    <!-- <div class="article__buy"> -->
-                        <div class="article__caption">
-                            <h2 class="article__title">title</h2>
-                            <h3 class="article__brand h4">rolex</h3> <!-- class="h4" -->
-                            <hr/>
-                            <h4 class="article__price">$300.99</h4> <!-- class="h3" -->
+                <div class="articles">
+                    <article class="article">
+                        <div class="article__img-container">
+                            <img src="./img/products/015.png" alt=""/>
                         </div>
-                        <div class="article__bag">
-                            <svg class="article__shopping-bag">
-                                <use xlink:href="img/sprite.svg#shopping-bag"></use>
-                            </svg>
+    
+                        <svg class="article__heart">
+                            <use xlink:href="img/sprite.svg#heart"></use>
+                        </svg>
+    
+                        <!-- <div class="article__buy"> -->
+                            <div class="article__caption">
+                                <h2 class="article__title">titletitletitletitlesss</h2> <!-- class="h3" -->
+                                <h3 class="article__brand h4">rolex</h3> <!-- class="h4" -->
+                                <hr/>
+                                <h4 class="article__price">$300.99</h4> <!-- class="h3" -->
+                            </div>
+                            <div class="article__bag">
+                                <svg class="article__shopping-bag">
+                                    <use xlink:href="img/sprite.svg#shopping-bag"></use>
+                                </svg>
+                            </div>
+                        <!-- </div> -->
+    
+                    </article>
+
+                    <article class="article">
+                        <div class="article__img-container">
+                            <img src="./img/products/015.png" alt=""/>
                         </div>
-                    <!-- </div> -->
+    
+                        <svg class="article__heart">
+                            <use xlink:href="img/sprite.svg#heart"></use>
+                        </svg>
+    
+                        <!-- <div class="article__buy"> -->
+                            <div class="article__caption">
+                                <h2 class="article__title">titletitletitletitlesss</h2> <!-- class="h3" -->
+                                <h3 class="article__brand h4">rolex</h3> <!-- class="h4" -->
+                                <hr/>
+                                <h4 class="article__price">$300.99</h4> <!-- class="h3" -->
+                            </div>
+                            <div class="article__bag">
+                                <svg class="article__shopping-bag">
+                                    <use xlink:href="img/sprite.svg#shopping-bag"></use>
+                                </svg>
+                            </div>
+                        <!-- </div> -->
+    
+                    </article>
 
-                </article>
-
-
-                <article class="article">
-                    <div class="article__img-container">
-                        <img src="./img/products/017.png" alt=""/>
-                    </div>
-
-                    <svg class="article__heart">
-                        <use xlink:href="img/sprite.svg#heart"></use>
-                    </svg>
-
-                    <!-- <div class="article__buy"> -->
-                        <div class="article__caption">
-                            <h2 class="article__title">title</h2>
-                            <h3 class="article__brand h4">rolex</h3> <!-- class="h4" -->
-                            <hr/>
-                            <h4 class="article__price">$300.99</h4> <!-- class="h3" -->
+                    <article class="article">
+                        <div class="article__img-container">
+                            <img src="./img/products/015.png" alt=""/>
                         </div>
-                        <div class="article__bag">
-                            <svg class="article__shopping-bag">
-                                <use xlink:href="img/sprite.svg#shopping-bag"></use>
-                            </svg>
+    
+                        <svg class="article__heart">
+                            <use xlink:href="img/sprite.svg#heart"></use>
+                        </svg>
+    
+                        <!-- <div class="article__buy"> -->
+                            <div class="article__caption">
+                                <h2 class="article__title">titletitletitletitlesss</h2> <!-- class="h3" -->
+                                <h3 class="article__brand h4">rolex</h3> <!-- class="h4" -->
+                                <hr/>
+                                <h4 class="article__price">$300.99</h4> <!-- class="h3" -->
+                            </div>
+                            <div class="article__bag">
+                                <svg class="article__shopping-bag">
+                                    <use xlink:href="img/sprite.svg#shopping-bag"></use>
+                                </svg>
+                            </div>
+                        <!-- </div> -->
+    
+                    </article>
+
+
+                    <article class="article">
+                        <div class="article__img-container">
+                            <img src="./img/products/015.png" alt=""/>
                         </div>
-                    <!-- </div> -->
+    
+                        <svg class="article__heart">
+                            <use xlink:href="img/sprite.svg#heart"></use>
+                        </svg>
+    
+                        <!-- <div class="article__buy"> -->
+                            <div class="article__caption">
+                                <h2 class="article__title">titletitletitletitlesss</h2> <!-- class="h3" -->
+                                <h3 class="article__brand h4">rolex</h3> <!-- class="h4" -->
+                                <hr/>
+                                <h4 class="article__price">$300.99</h4> <!-- class="h3" -->
+                            </div>
+                            <div class="article__bag">
+                                <svg class="article__shopping-bag">
+                                    <use xlink:href="img/sprite.svg#shopping-bag"></use>
+                                </svg>
+                            </div>
+                        <!-- </div> -->
+    
+                    </article>
 
-                </article>
 
-
-                <article class="article">
-                    <div class="article__img-container">
-                        <img src="./img/products/022.png" alt=""/>
-                    </div>
-
-                    <svg class="article__heart">
-                        <use xlink:href="img/sprite.svg#heart"></use>
-                    </svg>
-
-                    <!-- <div class="article__buy"> -->
-                        <div class="article__caption">
-                            <h2 class="article__title">title</h2>
-                            <h3 class="article__brand h4">rolex</h3> <!-- class="h4" -->
-                            <hr/>
-                            <h4 class="article__price">$300.99</h4> <!-- class="h3" -->
+                    <article class="article">
+                        <div class="article__img-container">
+                            <img src="./img/products/015.png" alt=""/>
                         </div>
-                        <div class="article__bag">
-                            <svg class="article__shopping-bag">
-                                <use xlink:href="img/sprite.svg#shopping-bag"></use>
-                            </svg>
-                        </div>
-                    <!-- </div> -->
+    
+                        <svg class="article__heart">
+                            <use xlink:href="img/sprite.svg#heart"></use>
+                        </svg>
+    
+                        <!-- <div class="article__buy"> -->
+                            <div class="article__caption">
+                                <h2 class="article__title">titletitletitletitlesss</h2> <!-- class="h3" -->
+                                <h3 class="article__brand h4">rolex</h3> <!-- class="h4" -->
+                                <hr/>
+                                <h4 class="article__price">$300.99</h4> <!-- class="h3" -->
+                            </div>
+                            <div class="article__bag">
+                                <svg class="article__shopping-bag">
+                                    <use xlink:href="img/sprite.svg#shopping-bag"></use>
+                                </svg>
+                            </div>
+                        <!-- </div> -->
+    
+                    </article>
 
-                </article>
- 
+                    
+                </div>
             </div>
-
-            <button class="btn"><span>All watches</span><em></em></button>
         </main>
 <!-- --------------------------- END MAIN --------------------------- -->
 
 
 <!-- --------------------------- SECTION SUBSCRIBE --------------------------- -->
-        <section class="subscribe">
-                    
-
-            <!-- <div class="subscribe__grid"> -->
-                    <div class="subscribe__photo-container"></div>
-
-                    <div class="subscribe__form">
-                            <h2 class="h2 mb-2">ENTER TO WIN A</h2><br/>
-                            <h3 class="h3 mb-7">$200 gift card</h3>
-                        <p class="subscribe__description mb-2">Get <span class="subscribe__wtt">-W-T-T-</span> news + be automatically entered to win an <span class="subscribe__wtt">-W-T-T-</span> Gift Card <br/> (new winner every month)</p>
-                        <form action="#">
-                            <input type="email" class="subscribe__email mb-1" placeholder="enter your email"/>
-                            <p class="subscribe__agree mb-3">by entering you agree to receive emails from <span class="subscribe__wtt">-W-T-T-</span></p>
-                            <button class="btn"><span>enter to win</span><em></em></button>
-                        </form>
-                    </div>
-
-                    <div class="subscribe__entered-email hide">
-                        <p>
-                            <svg class="icon">
-                                <linearGradient id="svg-teget-gradient" >
-                                    <stop offset="0%" stop-color="#423C48" />
-                                    <!-- <stop offset="50%" stop-color="#B28159" /> -->
-                                    <stop offset="100%" stop-color="#836146" />
-                                </linearGradient>
-                                <use xlink:href="img/sprite.svg#gift"></use>
-                            </svg> <br/>
-                            Thank You for the subscibing. <br/>
-                            You are entered to win and Gift Card. <br/> 
-                            <span>GOOD LUCK!</span>
-                        </p>
-                        
-                    </div>
-            <!-- </div> -->
-        </section>
 <!-- --------------------------- END SECTION SUBSRIBE --------------------------- -->
 
 
@@ -570,7 +565,7 @@
                     723 Bleecker Street, Manhattan, NY <br/>
                     United States, +1 212 123 4567
                 </p>
-                <p class="mb-2">whatsthetime@wtt.com</p>
+                <a class="show-block mb-2 mailto" href="mailto:whatsthetime@wtt.com?subject=Mail from Our Site">whatsthetime@wtt.com</a>
                 <ul class="footer__socials">
                     <li>
                         <a href="https://www.facebook.com/">

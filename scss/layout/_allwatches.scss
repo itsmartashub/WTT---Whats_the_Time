@@ -1,0 +1,28 @@
+.allwatches {
+    // background: orange;
+    display: grid;
+    grid-template-columns: auto 65vw;
+    // grid-template-columns: repeat(8, 1fr);
+    justify-content: center;
+    grid-gap: 5vw;
+    // grid-gap: 0 5rem;
+    position: relative;
+
+    .btn {
+        margin-top: 5rem;
+    }
+
+    @include device(tab-land) {
+        .articles {
+            grid-column: 1/-1;
+            grid-row: 1/-1;
+            z-index: 49;
+        }
+
+        .filtersort {
+            grid-column: 2/-1;
+            justify-self: end;
+            z-index: 50;
+        }
+    }
+}

@@ -66,7 +66,8 @@
                         United States, +1 212 123 4567
                     </p>
                     
-                    <b class="hamburger__nav-email">whatsthetime@wtt.com</b>
+                    <!-- <b class="hamburger__nav-email">whatsthetime@wtt.com</b> -->
+                    <a class="hamburger__nav-email" href="mailto:whatsthetime@wtt.com?subject=Mail from Our Site">whatsthetime@wtt.com</a>
 
                     <div class="hamburger__nav-social">
                         <svg class="hamburger__nav-fb">
@@ -324,12 +325,15 @@
 
                 <div class="sign__right">
                     <div class="sign__tabs">
-                        <div class="sign__tab-signin current-tab" id="tab-1">sign in</div>
-                        <div class="sign__tab-signup" id="tab-2">sign up</div>
+                        <div class="sign__tab-signin btn-form current-tab" id="tab-1">sign in</div>
+                        <div class="sign__tab-signup btn-form" id="tab-2">sign up</div>
+<!-- 
+                        <a class="sign__tab-signin btn-form current-tab" id="tab-1" href="#tab-1-content">sign in</a>
+                        <a class="sign__tab-signup btn-form" id="tab-2" href="#tab-2-content">sign up</a> -->
                     </div>
 
                     <!-- SIGN IN -->
-                    <div class="sign__signin show" id="tab-1-content">
+                    <div class="sign__signin show-block" id="tab-1-content">
                         <form action="#" class="form">
                             <div class="form__group">
                                 <svg class="icon">
@@ -390,7 +394,7 @@
                                     <use xlink:href="./img/sprite.svg#airplane"></use>
                                 </svg>
                                 <select name="" id="ddl-countries" class="form__ddl">
-                                    <option value="0">select country</option>
+                                    <option value="0">select country &nbsp; &nabla;</option>
                                     <option value="1">select country</option>
                                     <option value="2">select country</option>
                                     <option value="2">select country</option>
@@ -485,7 +489,7 @@
                     723 Bleecker Street, Manhattan, NY <br/>
                     United States, +1 212 123 4567
                 </p>
-                <p class="mb-2">whatsthetime@wtt.com</p>
+                <a class="show-block mb-2 mailto" href="mailto:whatsthetime@wtt.com?subject=Mail from Our Site">whatsthetime@wtt.com</a>
                 <ul class="footer__socials">
                     <li>
                         <a href="https://www.facebook.com/">

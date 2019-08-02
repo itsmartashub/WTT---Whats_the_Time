@@ -30,12 +30,16 @@
     margin-bottom: 8rem;
 }
 
+.mt-8 {
+    margin-top: 8rem;
+}
+
 .txt-center {
     text-align: center;
 }
 
 .show-block {
-    display: block;
+    display: block !important;
 }
 
 .show-flex {
@@ -54,4 +58,9 @@
     background: $teget;
     margin: 0 auto;
     margin-bottom: 2rem;
+}
+
+
+.clip-path-filtersort {
+    clip-path: circle(150% at 100% 100%);
 }

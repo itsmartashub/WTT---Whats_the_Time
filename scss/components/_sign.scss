@@ -6,7 +6,7 @@
         display: grid;
         justify-content: center;
         align-content: center;
-        grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
         // grid-template-columns: repeat(8, 1fr);
         // padding: 0 14rem;
         border-radius: .4rem;
@@ -57,16 +57,17 @@
 
     }
 
-    &__signup {
-        // display: none;
-        // border: 1px solid sandybrown;
-    }
+    // &__signin {
+    //     display: none;
+    //     // border: 1px solid sandybrown;
+    //     // padding: 3rem 4rem;
+    // }
 
-    &__signin {
-        display: none;
-        // border: 1px solid sandybrown;
-        // padding: 3rem 4rem;
-    }
+    // &__signup {
+    //     // display: none;
+    //     // border: 1px solid sandybrown;
+    // }
+
 
     &__tabs {
         display: flex;
@@ -74,25 +75,58 @@
         justify-self: end;
         align-self: center;
         border-radius: .4rem;
-        overflow: hidden;
         font-size: 1.2rem;
+        overflow: hidden;
     }
 
-    &__tab-signin, &__tab-signup {
-        padding: .6rem 1.6rem;
-        @extend .transition-2;
-        cursor: pointer;
+    // &__tab-signin, &__tab-signup {
+    //     padding: .6rem 1.6rem;
+    //     @extend .transition-2;
+    //     cursor: pointer;
 
-        &:hover {
-            color: rgba($bg-color, 1);
-        }
-    }
+    //     &:hover {
+    //         color: rgba($bg-color, 1);
+    //     }
+    // }
 
-    &__tab-signup {
-        color: rgba($bg-color, .4);
-    }
+    // &__tab-signup {
+    //     color: rgba($bg-color, .4);
+    // }
+
+    &__signin, &__signup  {
+        display: none;
+    } 
+
 
     .current-tab {
         background: $gold;
+        color: rgba($bg-color, 1);
     }
+
+   
 }
+
+// #tab-1-content, #tab-2-content {
+//     display: none;
+// }
+
+// #tab-1-content {
+//     display: block;
+// }
+
+
+// #tab-1-content:target {
+//     display: block;
+// }
+
+// #tab-1-content:not(:target) {
+//     display: none;
+// }
+
+// #tab-2-content:target {
+//     display: block;
+// }
+
+// #tab-2-content:not(:target) {
+//     display: none;
+// }

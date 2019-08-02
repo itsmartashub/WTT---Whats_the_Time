@@ -59,8 +59,8 @@
                     <ul class="hamburger__nav-list">
                         <li class="hamburger__nav-link"><a href="#">for her</a></li>
                         <li class="hamburger__nav-link"><a href="#">for him</a></li>
-                        <li class="hamburger__nav-link"><a href="#">new watches</a></li>
-                        <li class="hamburger__nav-link"><a href="#">all watches</a></li>
+                        <li class="hamburger__nav-link"><a href="#newwatches">new watches</a></li>
+                        <li class="hamburger__nav-link"><a href="allwatches.html">all watches</a></li>
                     </ul>
 
                     <p class="hamburger__nav-address">
@@ -68,7 +68,8 @@
                         United States, +1 212 123 4567
                     </p>
                     
-                    <b class="hamburger__nav-email">whatsthetime@wtt.com</b>
+                    <!-- <b class="hamburger__nav-email">whatsthetime@wtt.com</b> -->
+                    <a class="hamburger__nav-email" href="mailto:whatsthetime@wtt.com?subject=Mail from Our Site">whatsthetime@wtt.com</a>
 
                     <div class="hamburger__nav-social">
                         <svg class="hamburger__nav-fb">
@@ -308,7 +309,7 @@
             <div class="header__caption">
                 <div class="header__blur"></div>
                 <h1 class="header__title txt-center">What's the Time?</h1>
-                <h2 class="header__subtitle txt-center">It's time for the new Watch</h2>
+                <h2 class="header__subtitle txt-center mb-5">It's time for the new Watch</h2>
             </div>
         </header>
 <!-- --------------------------- END HEADER --------------------------- -->
@@ -354,11 +355,11 @@
 
 
 <!-- --------------------------- MAIN --------------------------- -->
-        <main class="main">
-            <h2 class="h2 mb-2">#NEW</h2><br/>
-            <h3 class="h3">latest models</h3>
+        <main class="main" id="newwatches">
+            <h2 class="h2 mb-1">#NEW</h2><br/>
+            <h3 class="h3 mb-8">latest models</h3>
 
-            <div class="main__articles">
+            <div class="articles">
                 <article class="article">
                     <div class="article__img-container">
                         <img src="./img/products/015.png" alt=""/>
@@ -465,7 +466,8 @@
  
             </div>
 
-            <button class="btn"><span>All watches</span><em></em></button>
+            <!-- <button class="btn mt-8"><span>All watches</span><em></em></button> -->
+            <a class="btn mt-8" href="allwatches.html"><span>All watches</span><em></em></a>
         </main>
 <!-- --------------------------- END MAIN --------------------------- -->
 
@@ -570,7 +572,7 @@
                     723 Bleecker Street, Manhattan, NY <br/>
                     United States, +1 212 123 4567
                 </p>
-                <p class="mb-2">whatsthetime@wtt.com</p>
+                <a class="show-block mb-2 mailto" href="mailto:whatsthetime@wtt.com?subject=Mail from Our Site">whatsthetime@wtt.com</a>
                 <ul class="footer__socials">
                     <li>
                         <a href="https://www.facebook.com/">

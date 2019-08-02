@@ -1,10 +1,11 @@
-.main__articles {
+.articles {
+    // background: red;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    justify-content: space-evenly;
     justify-items: center;
-    grid-gap: 6rem 10rem;
-    padding: 10rem 0;
+    grid-gap: 7vh 4vw;
+    // padding: 10rem 0;
     // background: lightskyblue;
 
 

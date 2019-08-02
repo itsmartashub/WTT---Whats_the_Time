@@ -152,4 +152,21 @@
         
         // &:hover::after { background: rgba(#fff, .2); }
     }
+
+}
+
+.btn-form {
+    padding: .6rem 1.6rem;
+    background: $teget;
+    color: rgba($bg-color, .4);
+    border-radius: .4rem;
+    font-size: 1.2rem;
+    @extend .transition-2;
+    font-family: $poppins;
+    cursor: pointer;
+
+    &:hover {
+        // background: $gold;
+        color: rgba($bg-color, 1);
+    }
 }

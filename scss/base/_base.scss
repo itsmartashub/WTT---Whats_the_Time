@@ -73,3 +73,21 @@ body::-webkit-resizer {
     background: $darkblue-3;
     color: $bg-color;
 }
+
+select {
+    -webkit-appearance: none;  /*Removes default chrome and safari style*/
+     -moz-appearance: none; 
+     appearance: none;
+     -webkit-user-select: none;
+    -moz-user-select: none;
+    //  text-indent: -.4rem;
+     text-overflow: "";
+     border: none;
+     outline-width: 0;
+     cursor: pointer;
+     font-family: $poppins;
+
+     option {
+         background: transparent; 
+     }
+}

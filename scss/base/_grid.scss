@@ -24,7 +24,7 @@
         }
 }
 
-.grid-container-signin {
+.grid-container-signin, .grid-container-allwatches {
     grid-template-rows: repeat(4, min-content);
     grid-template-areas: 
         "menu menu menu menu menu menu"
