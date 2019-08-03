@@ -1,0 +1,90 @@
+  // ------------- BAG ITEM -------------
+  .item {
+    display: grid;
+    align-items: center;
+    grid-template-columns: min-content repeat(3, max-content); // bag item
+    // grid-template-columns: min-content max-content repeat(2, max-content); // wishlist item
+    grid-column-gap: 1vw;
+    justify-content: space-evenly;
+    padding: 3vh 0;
+    @extend .transition-2;
+
+    &:hover {
+        box-shadow: $box-shadow-inset;
+    }
+
+    &__img-container {
+        background: $article-gradient;
+        box-shadow: $box-shadow-item-img;
+        width: 6rem;
+        height: 6rem;
+        padding: .5rem 0;
+        img {
+            // width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__about {
+        display: grid;
+        // background: lightblue;
+        grid-row-gap: .5rem;
+        justify-items: start;
+    }
+    &__title {
+        font-weight: 700;
+    }
+
+    &__up-down {
+        // background: lavenderblush;
+        font: 1.5rem $sans-o;
+        font-weight: bold;
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(3, 1fr);
+        // grid-column-gap: 1rem;
+        // justify-items: center;
+        // padding: 2rem;
+
+        // ------------- AMOUNT BTNS-------------
+        .amount-down, .amount-up {
+            // display: inline-block;
+            // font-weight: bold;
+            font-size: 2rem;
+            background: $teget-gradient;
+            color: $bg-color;
+            padding: 0rem .8rem;
+            cursor: pointer;
+            @extend .transition-2;
+        }
+
+        .amount-down:hover, .amount-up:hover {
+            background: $gold;
+            // color: $teget;
+            box-shadow: $box-shadow-item-img;
+        }
+    }   
+
+    // ------------- REMOVE BTN -------------
+    &__remove {
+        // background: lightcoral;
+        // font: 2rem $arsenal;
+        padding: .5rem 1rem;
+        cursor: pointer;
+        @extend .transition-2;
+
+        &:hover svg {
+            transform: scale(1.2);
+        }
+        svg {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+        
+    }
+
+
+    &__add-to-bag {
+        // background: orange;
+    }
+}

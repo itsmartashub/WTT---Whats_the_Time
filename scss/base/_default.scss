@@ -85,7 +85,14 @@ a { text-decoration: none; color: inherit; }
     // transform-origin: left top;
 }
 
-.show-bag {
-    display: block;
+.show-bag,
+.show-wishlist,
+#bag:target,
+#wishlist:target {
+    // display: block;
     transform: translateX(0);
+}
+
+.close {
+    transform: translateX(200%);
 }

@@ -1,5 +1,5 @@
 .sign {
-    padding: 5rem 12rem !important;
+    padding: 5rem 10vw !important;
 
     &__container {
         background: white;
@@ -7,8 +7,8 @@
         justify-content: center;
         align-content: center;
         grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
-        // grid-template-columns: repeat(8, 1fr);
-        // padding: 0 14rem;
+        // grid-template-rows: max-content;
+        // padding: 0 5rem;
         border-radius: .4rem;
         overflow: hidden;
         color: $bg-color;
@@ -57,14 +57,16 @@
 
     }
 
-    // &__signin {
-    //     display: none;
-    //     // border: 1px solid sandybrown;
-    //     // padding: 3rem 4rem;
-    // }
+    &__signin {
+        .form__input:placeholder-shown ~ .form__label { // zelimo da label bude sakriven, a ne input, dodajemo + tj sibling selector, dakle prvo selektujemo input pa potom sa sibling selektorom selektujemo prvi sibling sto je label. Da je izmedju inputa i labela bilo jos nekih divova tj elemenata, takodje bi mogl iselektovati label preko inputa, ali sa drugim selektorom ~ tilda. Da je label element u htmlu PRE inputa, nema sanse da bi mogli da ga selektujemo bilo kojim selektorom preko inputa
+            opacity: 0;
+            visibility: hidden; // zasto ne koristimo samo opacity? jer sa njim element je i dalje tu tj moze da se klikne na njega a da ne znamo, a sa visibility: hidden, ne. A zasto onda ne koristimo samo visibility? Jer njega ne mozemo da animiramo/transition, dok opacity mozemo! 
+            transform: translateY(0); // pogledaj kako izgleda ovaj efekat sa zakomentarisanim opacityjem i visibilityjem !
+        }
+    }
 
     // &__signup {
-    //     // display: none;
+    //     display: none;
     //     // border: 1px solid sandybrown;
     // }
 

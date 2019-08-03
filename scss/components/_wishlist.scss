@@ -1,0 +1,28 @@
+.wishlist {
+    // @extend
+    // .bag,
+    // .bag__hr,
+    // .bag__noitems;
+    
+    @extend .bag;
+
+    &__hr { @extend .bag__hr; }
+
+    &__noitems { @extend .bag__noitems; }
+    
+    // transform: translateX(0);
+    // right: 9vw;
+
+    &__content {
+        // overflow: auto;
+    }
+
+    // background: $bg-color;
+    // min-width: 35vw;
+    // height: 100vh;
+    // position: fixed;
+    // top: 7rem;
+    // z-index: 56;
+    // padding-top: 20rem;
+
+}

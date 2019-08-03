@@ -22,6 +22,10 @@
             "brands brands brands brands brands brands"
             "footer footer footer footer footer footer";
         }
+
+        @include device(phone) {
+            grid-template-rows: min-content 40vh repeat(5, min-content);
+        }
 }
 
 .grid-container-signin, .grid-container-allwatches {

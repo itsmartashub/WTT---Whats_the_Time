@@ -57,8 +57,8 @@
                     <ul class="hamburger__nav-list">
                         <li class="hamburger__nav-link"><a href="#">for her</a></li>
                         <li class="hamburger__nav-link"><a href="#">for him</a></li>
-                        <li class="hamburger__nav-link"><a href="#">new watches</a></li>
-                        <li class="hamburger__nav-link"><a href="#">all watches</a></li>
+                        <li class="hamburger__nav-link"><a href="/#newwatches">new watches</a></li>
+                        <li class="hamburger__nav-link"><a href="allwatches.html">all watches</a></li>
                     </ul>
 
                     <p class="hamburger__nav-address">
@@ -100,35 +100,35 @@
 
             <div class="menu__items">
                 <svg class="menu__search">
-                    <use xlink:href="./img/sprite.svg#magnifying-glass"></use>
+                    <use xlink:href="img/sprite.svg#magnifying-glass"></use>
                 </svg>
 
                 <svg class="menu__user">
-                    <use xlink:href="./img/sprite.svg#user"></use>
+                    <use xlink:href="img/sprite.svg#user"></use>
                 </svg>
 
                 <svg class="menu__wishlist">
-                    <use xlink:href="./img/sprite.svg#heart"></use>
+                    <use xlink:href="img/sprite.svg#heart"></use>
                 </svg>
-
+            
                 <div class="menu__bag">
                     <span class="menu__bag--counter">12</span>
                     <svg class="menu__shopping-bag">
-                        <use xlink:href="./img/sprite.svg#shopping-bag"></use>
+                        <use xlink:href="img/sprite.svg#shopping-bag"></use>
                     </svg>
                 </div>
 
                 <!-- DEFAULT BAG, EMPTY -->
                 <!-- <div class="bag">
-                    <h5 class="h5 mb-3">YOUR BAG</h5>
+                    <h5 class="h5 mb-3">YOUR BAG <span class="close-bag">x</span></h5>
                     <span class="bag__hr mb-3">&nbsp;</span>
                     <p class="bag__noitems mb-2">YOU HAVE NO ITEMS IN YOUR SHOPPING BAG.</p>
-                    <button class="btn">CONTINUE SHOPPING</button>
+                    <a class="btn continue-shopping" href="allwatches.html">CONTINUE SHOPPING</a>
                 </div> -->
 
                 <!-- PRIMER PUNOG BAG -->
-                <div class="bag">
-                    <h5 class="h5 mb-3">YOUR BAG</h5>
+                <div class="bag" id="bag">
+                    <h5 class="h5 mb-3">YOUR BAG <span class="close-bag">x</span></h5>
                     <span class="bag__hr mb-3">&nbsp;</span>
 
                     <div class="bag__content">
@@ -294,7 +294,44 @@
                         <button class="btn btn--gold bag__clear"><span>clear bag</span><em></em></button>
                     </div>
 
+                </div> <!-- END BAG -->
+
+                <!-- DEFAULT WISHLIST, EMPTY -->
+                <!-- <div class="wishlist">
+                    <h5 class="h5 mb-3">YOUR WISHLIST <span class="close-wishlist">x</span></h5>
+                    <span class="wishlist__hr mb-3">&nbsp;</span>
+                    <p class="wishlist__noitems mb-2">YOU HAVE NO ITEMS IN YOUR WISHLIST.</p>
+                    <a class="btn continue-shopping" href="allwatches.html">CONTINUE SHOPPING</a>
+                </div> -->
+
+                <!-- WISHLIST -->
+                <div class="wishlist" id="wishlist">
+                    <h5 class="h5 mb-3">YOUR WISHLIST <span class="close-wishlist">x</span></h5>
+                    <span class="wishlist__hr mb-3">&nbsp;</span>
+
+                    <div class="wishlist__content">
+                        <div class="item">
+                            <div class="item__img-container">
+                                <img src="./img/products/051.png" class="item__img" alt="product">
+                            </div>
+                            <div class="item__about">
+                                <h4 class="h4 item__title">titletitletittitlele</h4>
+                                <h6 class="h4 item__brand">brand</h6>
+                                <h5 class="h4 item__price">$160.33</h5>
+                            </div>
+                            <div class="item__add-to-bag btn-form">
+                                ADD TO BAG
+                            </div>
+
+                            <div class="item__remove" data-id="2">
+                                <svg>
+                                    <use xlink:href="img/sprite.svg#cross-out"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                
 
             </div>
         </section>

@@ -65,11 +65,11 @@
         color: $lgold;
     }
 
-    &__input:placeholder-shown ~ &__label { // zelimo da label bude sakriven, a ne input, dodajemo + tj sibling selector, dakle prvo selektujemo input pa potom sa sibling selektorom selektujemo prvi sibling sto je label. Da je izmedju inputa i labela bilo jos nekih divova tj elemenata, takodje bi mogl iselektovati label preko inputa, ali sa drugim selektorom ~ tilda. Da je label element u htmlu PRE inputa, nema sanse da bi mogli da ga selektujemo bilo kojim selektorom preko inputa
-        opacity: 0;
-        visibility: hidden; // zasto ne koristimo samo opacity? jer sa njim element je i dalje tu tj moze da se klikne na njega a da ne znamo, a sa visibility: hidden, ne. A zasto onda ne koristimo samo visibility? Jer njega ne mozemo da animiramo/transition, dok opacity mozemo! 
-        transform: translateY(0); // pogledaj kako izgleda ovaj efekat sa zakomentarisanim opacityjem i visibilityjem !
-    }
+    // .form__input:placeholder-shown ~ .form__label { // zelimo da label bude sakriven, a ne input, dodajemo + tj sibling selector, dakle prvo selektujemo input pa potom sa sibling selektorom selektujemo prvi sibling sto je label. Da je izmedju inputa i labela bilo jos nekih divova tj elemenata, takodje bi mogl iselektovati label preko inputa, ali sa drugim selektorom ~ tilda. Da je label element u htmlu PRE inputa, nema sanse da bi mogli da ga selektujemo bilo kojim selektorom preko inputa
+    //     opacity: 0;
+    //     visibility: hidden; // zasto ne koristimo samo opacity? jer sa njim element je i dalje tu tj moze da se klikne na njega a da ne znamo, a sa visibility: hidden, ne. A zasto onda ne koristimo samo visibility? Jer njega ne mozemo da animiramo/transition, dok opacity mozemo! 
+    //     transform: translateY(0); // pogledaj kako izgleda ovaj efekat sa zakomentarisanim opacityjem i visibilityjem !
+    // }
 
     // &__ddl {
     //     width: 100%;
@@ -145,5 +145,12 @@
     &__group button {
         margin: 0 auto;
         display: block;
+    }
+
+    input:invalid, input:required {
+        border: none;
+        outline: none;
+        box-shadow: none; // za mozilu!!
+        border-bottom: .15rem solid orangered;
     }
 }
