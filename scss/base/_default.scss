@@ -87,10 +87,11 @@ a { text-decoration: none; color: inherit; }
 
 .show-bag,
 .show-wishlist,
+.show-translate,
 #bag:target,
 #wishlist:target {
     // display: block;
-    transform: translateX(0);
+    transform: translateX(0) !important;
 }
 
 .close {

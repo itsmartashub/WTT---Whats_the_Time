@@ -107,12 +107,15 @@
                     <use xlink:href="img/sprite.svg#user"></use>
                 </svg>
 
-                <svg class="menu__wishlist">
-                    <use xlink:href="img/sprite.svg#heart"></use>
-                </svg>
+                <div class="menu__wishlist">
+                    <span class="counter">12</span>
+                    <svg>
+                        <use xlink:href="img/sprite.svg#heart"></use>
+                    </svg>
+                </div>
             
                 <div class="menu__bag">
-                    <span class="menu__bag--counter">12</span>
+                    <span class="counter">12</span>
                     <svg class="menu__shopping-bag">
                         <use xlink:href="img/sprite.svg#shopping-bag"></use>
                     </svg>
@@ -120,7 +123,7 @@
 
                 <!-- DEFAULT BAG, EMPTY -->
                 <!-- <div class="bag">
-                    <h5 class="h5 mb-3">YOUR BAG <span class="close-bag">x</span></h5>
+                    <h5 class="h5 mb-3">YOUR BAG <span class="bag__close">x</span></h5>
                     <span class="bag__hr mb-3">&nbsp;</span>
                     <p class="bag__noitems mb-2">YOU HAVE NO ITEMS IN YOUR SHOPPING BAG.</p>
                     <a class="btn continue-shopping" href="allwatches.html">CONTINUE SHOPPING</a>
@@ -128,209 +131,85 @@
 
                 <!-- PRIMER PUNOG BAG -->
                 <div class="bag" id="bag">
-                    <h5 class="h5 mb-3">YOUR BAG <span class="close-bag">x</span></h5>
-                    <span class="bag__hr mb-3">&nbsp;</span>
-
-                    <div class="bag__content">
-                        <div class="item">
-                            <div class="item__img-container">
-                                <img src="./img/products/051.png" class="item__img" alt="product">
+                        <h5 class="h5 mb-3">YOUR BAG <span class="bag__close">x</span></h5>
+                        <span class="bag__hr mb-3">&nbsp;</span>
+    
+                        <div class="bag__content">
+                            <!-- cart item, kreirano u js-u -->
+                            <div class="bag-item">
+                                <div class="bag-item__img-container">
+                                    <img src="./img/products/051.png" class="bag-item__img" alt="product">
+                                </div>
+                                <div class="bag-item__about">
+                                    <h4 class="h4 bag-item__title">titletitletittitlele</h4>
+                                    <h6 class="h4 bag-item__brand">brand</h6>
+                                    <h5 class="h4 bag-item__price">$160.33</h5>
+                                </div>
+                                <div class="bag-item__up-down">
+                                    <span class="amount-down" data-id="2">-</span>
+                                    <span class="amount" data-id="2">1</span>
+                                    <span class="amount-up" data-id="2">+</span>
+                                </div>
+    
+                                <div class="bag-item__remove" data-id="2">
+                                    <svg>
+                                        <use xlink:href="img/sprite.svg#cross-out"></use>
+                                    </svg>
+                                </div>
                             </div>
-                            <div class="item__about">
-                                <h4 class="h4 item__title">titletitletittitlele</h4>
-                                <h6 class="h4 item__brand">brand</h6>
-                                <h5 class="h4 item__price">$160.33</h5>
-                            </div>
-                            <div class="item__up-down">
-                                <span class="amount-down" data-id="2">-</span>
-                                <span class="amount" data-id="2">1</span>
-                                <span class="amount-up" data-id="2">+</span>
-                            </div>
-
-                            <div class="item__remove" data-id="2">
-                                <svg>
-                                    <use xlink:href="img/sprite.svg#cross-out"></use>
-                                </svg>
-                            </div>
+                            <!-- end of cart item -->
                         </div>
-
-                        <div class="item">
-                            <div class="item__img-container">
-                                <img src="./img/products/002.png" class="item__img" alt="product">
-                            </div>
-                            <div class="item__about">
-                                <h4 class="h4 item__title">titletitlettitleitle</h4>
-                                <h6 class="h4 item__brand">brand</h6>
-                                <h5 class="h4 item__price">$160.33</h5>
-                            </div>
-                            <div class="item__up-down">
-                                <span class="amount-down" data-id="2">-</span>
-                                <span class="amount" data-id="2">1</span>
-                                <span class="amount-up" data-id="2">+</span>
-                            </div>
-
-                            <div class="item__remove" data-id="2">
-                                <svg>
-                                    <use xlink:href="img/sprite.svg#cross-out"></use>
-                                </svg>
-                            </div>
+                        
+                        <div class="bag__footer">
+                            <h6 class="h6 mb-1">your total: $<span class="bag__total">0</span></h6>
+                            <div class="hr2 mb-3">&nbsp;</div>
+                            <button  class="btn btn--teget bag__checkout mb-2"><span>checkout</span><em></em></button>
+                            <br/>
+                            <button class="btn btn--gold bag__clear"><span>clear bag</span><em></em></button>
                         </div>
-
-                        <div class="item">
-                            <div class="item__img-container">
-                                <img src="./img/products/071.png" class="item__img" alt="product">
-                            </div>
-                            <div class="item__about">
-                                <h4 class="h4 item__title">titletitletitletitle</h4>
-                                <h6 class="h4 item__brand">brand</h6>
-                                <h5 class="h4 item__price">$160.33</h5>
-                            </div>
-                            <div class="item__up-down">
-                                <span class="amount-down" data-id="2">-</span>
-                                <span class="amount" data-id="2">1</span>
-                                <span class="amount-up" data-id="2">+</span>
-                            </div>
-
-                            <div class="item__remove" data-id="2">
-                                <svg>
-                                    <use xlink:href="img/sprite.svg#cross-out"></use>
-                                </svg>
-                            </div>
-                        </div>
-
-                        <div class="item">
-                            <div class="item__img-container">
-                                <img src="./img/products/073.png" class="item__img" alt="product">
-                            </div>
-                            <div class="item__about">
-                                <h4 class="h4 item__title">titletitletitletitle</h4>
-                                <h6 class="h4 item__brand">brand</h6>
-                                <h5 class="h4 item__price">$160.33</h5>
-                            </div>
-                            <div class="item__up-down">
-                                <span class="amount-down" data-id="2">-</span>
-                                <span class="amount" data-id="2">1</span>
-                                <span class="amount-up" data-id="2">+</span>
-                            </div>
-
-                            <div class="item__remove" data-id="2">
-                                <svg>
-                                    <use xlink:href="img/sprite.svg#cross-out"></use>
-                                </svg>
-                            </div>
-                        </div>
-
-                        <div class="item">
-                            <div class="item__img-container">
-                                <img src="./img/products/040.png" class="item__img" alt="product">
-                            </div>
-                            <div class="item__about">
-                                <h4 class="h4 item__title">titletitletitletitle</h4>
-                                <h6 class="h4 item__brand">brand</h6>
-                                <h5 class="h4 item__price">$160.33</h5>
-                            </div>
-                            <div class="item__up-down">
-                                <span class="amount-down" data-id="2">-</span>
-                                <span class="amount" data-id="2">1</span>
-                                <span class="amount-up" data-id="2">+</span>
-                            </div>
-
-                            <div class="item__remove" data-id="2">
-                                <svg>
-                                    <use xlink:href="img/sprite.svg#cross-out"></use>
-                                </svg>
-                            </div>
-                        </div>
-
-                        <div class="item">
-                            <div class="item__img-container">
-                                <img src="./img/products/045.png" class="item__img" alt="product">
-                            </div>
-                            <div class="item__about">
-                                <h4 class="h4 item__title">titletitletitletitle</h4>
-                                <h6 class="h4 item__brand">brand</h6>
-                                <h5 class="h4 item__price">$160.33</h5>
-                            </div>
-                            <div class="item__up-down">
-                                <span class="amount-down" data-id="2">-</span>
-                                <span class="amount" data-id="2">1</span>
-                                <span class="amount-up" data-id="2">+</span>
-                            </div>
-
-                            <div class="item__remove" data-id="2">
-                                <svg>
-                                    <use xlink:href="img/sprite.svg#cross-out"></use>
-                                </svg>
-                            </div>
-                        </div>
-
-                        <div class="item">
-                            <div class="item__img-container">
-                                <img src="./img/products/074.png" class="item__img" alt="product">
-                            </div>
-                            <div class="item__about">
-                                <h4 class="h4 item__title">titletitletitletitle</h4>
-                                <h6 class="h4 item__brand">brand</h6>
-                                <h5 class="h4 item__price">$160.33</h5>
-                            </div>
-                            <div class="item__up-down">
-                                <span class="amount-down btn" data-id="2">-</span>
-                                <span class="amount" data-id="2">1</span>
-                                <span class="amount-up btn" data-id="2">+</span>
-                            </div>
-
-                            <div class="item__remove" data-id="2">
-                                <svg>
-                                    <use xlink:href="img/sprite.svg#cross-out"></use>
-                                </svg>
-                            </div>
-                        </div>
+    
                     </div>
+                    <!-- BAG END -->
                     
-                    <div class="bag__footer">
-                        <h6 class="h6 mb-1">your total: $<span class="bag__total">0</span></h6>
-                        <div class="hr2 mb-3">&nbsp;</div>
-                        <button class="btn btn--teget bag__checkout mb-2"><span>checkout</span><em></em></button><br>
-                        <button class="btn btn--gold bag__clear"><span>clear bag</span><em></em></button>
-                    </div>
-
-                </div> <!-- END BAG -->
-
-                <!-- DEFAULT WISHLIST, EMPTY -->
-                <!-- <div class="wishlist">
-                    <h5 class="h5 mb-3">YOUR WISHLIST <span class="close-wishlist">x</span></h5>
-                    <span class="wishlist__hr mb-3">&nbsp;</span>
-                    <p class="wishlist__noitems mb-2">YOU HAVE NO ITEMS IN YOUR WISHLIST.</p>
-                    <a class="btn continue-shopping" href="allwatches.html">CONTINUE SHOPPING</a>
-                </div> -->
-
-                <!-- WISHLIST -->
-                <div class="wishlist" id="wishlist">
-                    <h5 class="h5 mb-3">YOUR WISHLIST <span class="close-wishlist">x</span></h5>
-                    <span class="wishlist__hr mb-3">&nbsp;</span>
-
-                    <div class="wishlist__content">
-                        <div class="item">
-                            <div class="item__img-container">
-                                <img src="./img/products/051.png" class="item__img" alt="product">
-                            </div>
-                            <div class="item__about">
-                                <h4 class="h4 item__title">titletitletittitlele</h4>
-                                <h6 class="h4 item__brand">brand</h6>
-                                <h5 class="h4 item__price">$160.33</h5>
-                            </div>
-                            <div class="item__add-to-bag btn-form">
-                                ADD TO BAG
-                            </div>
-
-                            <div class="item__remove" data-id="2">
-                                <svg>
-                                    <use xlink:href="img/sprite.svg#cross-out"></use>
-                                </svg>
+    
+                    <!-- DEFAULT WISHLIST, EMPTY -->
+                    <!-- <div class="wishlist">
+                        <h5 class="h5 mb-3">YOUR WISHLIST <span class="wishlist__close">x</span></h5>
+                        <span class="wishlist__hr mb-3">&nbsp;</span>
+                        <p class="wishlist__noitems mb-2">YOU HAVE NO ITEMS IN YOUR WISHLIST.</p>
+                        <a class="btn continue-shopping" href="allwatches.html">CONTINUE SHOPPING</a>
+                    </div> -->
+    
+                    <!-- WISHLIST -->
+                    <div class="wishlist" id="wishlist">
+                            <h5 class="h5 mb-3">YOUR WISHLIST <span class="wishlist__close">x</span></h5>
+                            <span class="wishlist__hr mb-3">&nbsp;</span>
+        
+                            <div class="wishlist__content">
+                                <!-- wishlist item, kreirano u js-u -->
+                                <div class="wishlist-item">
+                                    <div class="wishlist-item__img-container">
+                                        <img src="./img/products/051.png" class="wishlist-item__img" alt="product">
+                                    </div>
+                                    <div class="wishlist-item__about">
+                                        <h4 class="h4 wishlist-item__title">titletitletittitlele</h4>
+                                        <h6 class="h4 wishlist-item__brand">brand</h6>
+                                        <h5 class="h4 wishlist-item__price">$160.33</h5>
+                                    </div>
+                                    <div class="wishlist-item__add-to-bag btn-form">
+                                        ADD TO BAG
+                                    </div>
+        
+                                    <div class="wishlist-item__remove" data-id="2">
+                                        <svg>
+                                            <use xlink:href="img/sprite.svg#cross-out"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <!-- end of wishlist item -->
                             </div>
                         </div>
-                    </div>
-                </div>
+                        <!-- WISHLIST END -->
                 
 
             </div>

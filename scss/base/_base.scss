@@ -40,6 +40,7 @@ body {
     position: relative;
 }
 
+
 body::-webkit-scrollbar { 
     width: 1rem;
 }
@@ -69,6 +70,7 @@ body::-webkit-resizer {
     background:red;
 }
 
+
 ::selection {
     background: $darkblue-3;
     color: $bg-color;
@@ -80,6 +82,7 @@ select {
      appearance: none;
      -webkit-user-select: none;
     -moz-user-select: none;
+    user-select: none;
     //  text-indent: -.4rem;
      text-overflow: "";
      border: none;

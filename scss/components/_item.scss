@@ -1,5 +1,5 @@
-  // ------------- BAG ITEM -------------
-  .item {
+  //? ======================== BAG ITEM ========================
+  .bag-item {
     display: grid;
     align-items: center;
     grid-template-columns: min-content repeat(3, max-content); // bag item
@@ -72,6 +72,51 @@
         padding: .5rem 1rem;
         cursor: pointer;
         @extend .transition-2;
+
+        &:hover svg {
+            transform: scale(1.2);
+        }
+        svg {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+        
+    }
+
+
+    &__add-to-bag {
+        // background: orange;
+    }
+}
+
+
+  //? ======================== WISHLIST ITEM ========================
+  .wishlist-item {
+    @extend .bag-item;
+
+    &:hover {
+        @extend .bag-item:hover;
+    }
+
+    &__img-container {
+        @extend .bag-item__img-container;
+
+        img {
+            height: 100%;
+        }
+    }
+
+    &__about {
+        @extend .bag-item__about;
+    }
+    &__title {
+        @extend .bag-item__title;
+    }
+
+
+    // ------------- REMOVE BTN -------------
+    &__remove {
+        @extend .bag-item__remove;
 
         &:hover svg {
             transform: scale(1.2);

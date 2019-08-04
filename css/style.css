@@ -187,6 +187,7 @@ select {
   appearance: none;
   -webkit-user-select: none;
   -moz-user-select: none;
+  user-select: none;
   text-overflow: "";
   border: none;
   outline-width: 0;
@@ -236,7 +237,7 @@ a {
   background-clip: text;
   color: transparent; }
 
-.transition-2, .hamburger__nav-email, .btn, .btn:link, .btn:visited, .btn-form, .form__input, .form__ddl, .item, .item__up-down .amount-down, .item__up-down .amount-up, .item__remove, .filtersort__img, .filtersort__caption, .subscribe__email, .brands img {
+.transition-2, .hamburger__nav-email, .btn, .btn:link, .btn:visited, .btn-form, .form__input, .form__ddl, .bag-item, .wishlist-item, .bag-item__up-down .amount-down, .bag-item__up-down .amount-up, .bag-item__remove, .wishlist-item__remove, .filtersort__img, .filtersort__caption, .subscribe__email, .brands img {
   transition: all 0.2s cubic-bezier(0.65, 0.05, 0.36, 1); }
 
 .transition-3, .hamburger .chb-toggle:checked ~ .hamburger__btn .hamburger__icon::before,
@@ -284,9 +285,10 @@ a {
 
 .show-bag,
 .show-wishlist,
+.show-translate,
 #bag:target,
 #wishlist:target {
-  transform: translateX(0); }
+  transform: translateX(0) !important; }
 
 .close {
   transform: translateX(200%); }
@@ -712,6 +714,7 @@ h1, h2, h3, h4, h5, h6 {
     .bag, .wishlist {
       right: 0; } }
   .bag__content {
+    height: 50vh;
     max-height: 50vh;
     overflow-y: scroll;
     box-shadow: inset 0px -10px 20px -5px rgba(24, 46, 69, 0.2); }
@@ -727,66 +730,76 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 2rem;
     position: relative; }
 
-.bag__content::-webkit-scrollbar {
+.bag__content::-webkit-scrollbar, .bag__content::-moz-scrollbar {
   width: 1rem; }
 
-.bag__content::-webkit-scrollbar-track {
+.bag__content::-webkit-scrollbar-track, .bag__content::-moz-scrollbar-track {
   background: #FEFCFB; }
 
-.bag__content::-webkit-scrollbar-thumb {
+.bag__content::-webkit-scrollbar-thumb, .bag__content::-moz-scrollbar-thumb {
   background: radial-gradient(circle farthest-corner at 0% 0.5%, #9c714e 0.1%, #cb9a71 100.2%);
   border-bottom-left-radius: .1rem;
   border-bottom-right-radius: .1rem; }
 
-.bag__content::-webkit-scrollbar-corner, .bag::-webkit-scrollbar-button, .wishlist::-webkit-scrollbar-button {
+.bag__content::-webkit-scrollbar-corner, .bag::-webkit-scrollbar-button, .wishlist::-webkit-scrollbar-button, .bag__content::-moz-scrollbar-corner, .bag::-moz-scrollbar-button, .wishlist::-moz-scrollbar-button {
   background: #FEFCFB; }
 
-.item {
+.bag-item, .wishlist-item {
   display: grid;
   align-items: center;
   grid-template-columns: min-content repeat(3, max-content);
   grid-column-gap: 1vw;
   justify-content: space-evenly;
   padding: 3vh 0; }
-  .item:hover {
+  .bag-item:hover, .wishlist-item:hover {
     box-shadow: inset 0 0 1.5rem 1rem rgba(226, 226, 226, 0.5); }
-  .item__img-container {
+  .bag-item__img-container, .wishlist-item__img-container {
     background: radial-gradient(circle farthest-corner at 0% 0.5%, #f1f1f2 0.1%, #e0e2e4 100.2%);
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
     width: 6rem;
     height: 6rem;
     padding: .5rem 0; }
-    .item__img-container img {
+    .bag-item__img-container img, .wishlist-item__img-container img {
       height: 100%; }
-  .item__about {
+  .bag-item__about, .wishlist-item__about {
     display: grid;
     grid-row-gap: .5rem;
     justify-items: start; }
-  .item__title {
+  .bag-item__title, .wishlist-item__title {
     font-weight: 700; }
-  .item__up-down {
+  .bag-item__up-down {
     font: 1.5rem "Open Sans", sans-serif;
     font-weight: bold;
     display: grid;
     align-items: center;
     grid-template-columns: repeat(3, 1fr); }
-    .item__up-down .amount-down, .item__up-down .amount-up {
+    .bag-item__up-down .amount-down, .bag-item__up-down .amount-up {
       font-size: 2rem;
       background: radial-gradient(circle farthest-corner at 0% 0.5%, #34303f 0.1%, #39325e 100.2%);
       color: #FEFCFB;
       padding: 0rem .8rem;
       cursor: pointer; }
-    .item__up-down .amount-down:hover, .item__up-down .amount-up:hover {
+    .bag-item__up-down .amount-down:hover, .bag-item__up-down .amount-up:hover {
       background: #B39674;
       box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3); }
-  .item__remove {
+  .bag-item__remove, .wishlist-item__remove {
     padding: .5rem 1rem;
     cursor: pointer; }
-    .item__remove:hover svg {
+    .bag-item__remove:hover svg, .wishlist-item__remove:hover svg {
       transform: scale(1.2); }
-    .item__remove svg {
+    .bag-item__remove svg, .wishlist-item__remove svg {
       width: 1.5rem;
       height: 1.5rem; }
+
+.wishlist-item__img-container img {
+  height: 100%; }
+
+.wishlist-item__remove:hover svg {
+  transform: scale(1.2); }
+
+.wishlist-item__remove svg {
+  width: 1.5rem;
+  height: 1.5rem; }
 
 .articles {
   display: grid;
@@ -1027,31 +1040,31 @@ h1, h2, h3, h4, h5, h6 {
     .menu__items svg {
       transition: all .2s ease-in-out;
       z-index: 60; }
-      .menu__items svg:not(:last-child) {
-        margin-right: 2.5rem; }
-  .menu__bag {
+  .menu__search, .menu__user, .menu__bag, .menu__wishlist {
+    margin-right: 2.5rem; }
+  .menu__bag, .menu__wishlist {
     position: relative;
     cursor: pointer;
     transition: all .2s ease-in-out;
     z-index: 60; }
-    .menu__bag:hover svg {
+    .menu__bag:hover svg, .menu__wishlist:hover svg {
       fill: #B39674; }
-    .menu__bag--counter {
-      position: absolute;
-      top: 0rem;
-      right: -.3rem;
-      border-radius: 50%;
-      border: 0.25rem solid #FEFCFB;
-      background: radial-gradient(circle farthest-corner at 0% 0.5%, #9c714e 0.1%, #cb9a71 100.2%);
-      font-size: .8rem;
-      color: #FEFCFB;
-      font-family: "Poppins", sans-serif;
-      width: 1.7rem;
-      height: 1.7rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      z-index: 6; }
+  .menu .counter {
+    position: absolute;
+    top: 0rem;
+    right: -.3rem;
+    border-radius: 50%;
+    border: 0.25rem solid #FEFCFB;
+    background: radial-gradient(circle farthest-corner at 0% 0.5%, #9c714e 0.1%, #cb9a71 100.2%);
+    font-size: .8rem;
+    color: #FEFCFB;
+    font-family: "Poppins", sans-serif;
+    width: 1.7rem;
+    height: 1.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 6; }
 
 .small-menu {
   padding: 0 6vw; }
